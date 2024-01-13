@@ -21,6 +21,8 @@ import "react-toastify/dist/ReactToastify.css";
 class FitnessForm extends React.Component {
   constructor(props) {
     super(props);
+    this.name = localStorage.getItem('name');
+    this.mobile = localStorage.getItem('mobile');
     this.state = {
       service: "",
       age: "",
@@ -29,8 +31,8 @@ class FitnessForm extends React.Component {
       height: "",
       weight: "",
       activity: "",
-      name: "",
-      phone: "",
+      name: localStorage.getItem('name')?localStorage.getItem('name'):"",
+      phone: localStorage.getItem('mobile')?localStorage.getItem('mobile'):"",
       goal: "",
       pain: "",
       injury: "",
@@ -59,12 +61,11 @@ class FitnessForm extends React.Component {
 
   handleClick = e => {
     e.preventDefault();
+    // console.log(this.state);
     this.setState({ submitted: true }, () => {
       if (
         this.state.service &&
         this.state.gender &&
-        this.state.name &&
-        this.state.phone &&
         this.state.height &&
         this.state.weight &&
         this.state.pain &&
@@ -102,7 +103,7 @@ class FitnessForm extends React.Component {
     var self = this;
     self.setState({
       name: self.props.userDetail.name,
-      phone: self.props.userDetail.phoneNumber
+      phone: self.props.userDetail.mobile
     });
   }
 
@@ -202,7 +203,8 @@ class FitnessForm extends React.Component {
                         </div>
                       </div>
                     </div>
-                    {this.state.service === "forothers" ? (
+                    
+                    {(!this.name)? (
                       <div>
                         <div className="form-group ">
                           <div className="inputfield">
@@ -216,7 +218,7 @@ class FitnessForm extends React.Component {
                               name="name"
                               onChange={this.handleInputChange}
                               value={this.state.name}
-                            />
+                              />
                           </div>
                         </div>
 
@@ -232,7 +234,43 @@ class FitnessForm extends React.Component {
                               name="phone"
                               onChange={this.handleInputChange}
                               value={this.state.phone}
-                            />
+                              />
+                          </div>
+                        </div>
+                      </div>
+                    ) : null}
+
+{this.state.service === "forothers" ? (
+                      <div>
+                        <div className="form-group ">
+                          <div className="inputfield">
+                            <TextValidator
+                              label="Name *  "
+                              validators={["required"]}
+                              errorMessages={"Please enter your Name !"}
+                              type="text"
+                              placeholder="Name"
+                              className="form-control"
+                              name="name"
+                              onChange={this.handleInputChange}
+                              value={this.state.name}
+                              />
+                          </div>
+                        </div>
+
+                        <div className="form-group ">
+                          <div className="inputfield">
+                            <TextValidator
+                              label="Phone *"
+                              validators={["required"]}
+                              errorMessages={"Please enter your Phone no !"}
+                              type="number"
+                              placeholder="phone"
+                              className="form-control"
+                              name="phone"
+                              onChange={this.handleInputChange}
+                              value={this.state.phone}
+                              />
                           </div>
                         </div>
                       </div>

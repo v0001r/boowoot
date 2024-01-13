@@ -1,5 +1,8 @@
 import React from "react"
+import { ToastContainer, toast, Flip } from "react-toastify";
 import { firebase } from "../firebase/index"
+import { toastConfig } from "../Custom/ToastConfig";
+import { withRouter } from "react-router-dom";
 
 class TrainerProfile extends React.Component{
 
@@ -13,7 +16,7 @@ class TrainerProfile extends React.Component{
       }
 
     componentDidMount(){
-        fetch("http://localhost:5011/v1/trainers/"+this.props.tid, {
+        fetch("http://api.bowoot.com/v1/trainers/"+this.props.tid, {
           method: "GET", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -30,16 +33,72 @@ class TrainerProfile extends React.Component{
           });
     }
 
-    handleUnblock = () =>{
-        firebase.database().ref("trainers").child(this.props.tid).update({isBlocked:false}) 
-    }
 
     handleBlock = () =>{
-        firebase.database().ref("trainers").child(this.props.tid).update({isBlocked:true}) 
+        const data = {
+            id: this.props.tid
+        }
+        fetch("http://api.bowoot.com/v1/trainers/reject/", {
+          method: "post", // *GET, POST, PUT, DELETE, etc.
+          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+          body: JSON.stringify(data)
+        })
+          .then((response) => response.json()).then(responseData => {
+            console.log(responseData)
+            if(responseData.success){
+
+                toast(
+                    "Rejected Succesfully",
+                    toastConfig
+                  );
+                  window.location.reload();
+            }else{
+                toast(
+                    "Some error occured",
+                    toastConfig
+                  );
+            }
+          })
+          .catch(err => {
+          }); 
     }
 
     handleApprove = () =>{
-        firebase.database().ref("trainers").child(this.props.tid).update({isApproved:true})
+        const data = {
+            id: this.props.tid
+        }
+        fetch("http://api.bowoot.com/v1/trainers/approve/", {
+          method: "post", // *GET, POST, PUT, DELETE, etc.
+          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+          body: JSON.stringify(data)
+        })
+        .then((response) => response.json()).then(responseData => {
+            if(responseData){
+                console.log(responseData)
+                toast(
+                    "Approved Succesfully",
+                    toastConfig
+                  );
+                  window.location.reload();
+            }else{
+                toast(
+                    "Some error occured",
+                    toastConfig
+                  );
+            }
+        })
+          .catch(err => {
+          });
     }
 
     render(){
@@ -153,6 +212,7 @@ class TrainerProfile extends React.Component{
                             </table>
                         </div> */}
 
+                <ToastContainer transition={Flip} />
                     </div>
                 </div>
             </div>
@@ -161,4 +221,4 @@ class TrainerProfile extends React.Component{
 
 }
 
-export default TrainerProfile
+export default withRouter(TrainerProfile)

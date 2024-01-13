@@ -25,7 +25,10 @@ class Diet extends React.Component {
   }
 
   componentDidMount() {
-    if (this.props.diet.description && firebase.auth().currentUser) {
+    const user = localStorage.getItem('token');
+    const user_type = localStorage.getItem('user_type');
+
+    if (user) {
       this.setState({
         show: true
       });
@@ -36,9 +39,7 @@ class Diet extends React.Component {
   render() {
     return (
       <div
-        style={{
-          marginLeft: this.props.userRenderPage === "ChooseDietPlan" ? 100 : 0
-        }}
+       
       >
         <DietPlanProducts />
 

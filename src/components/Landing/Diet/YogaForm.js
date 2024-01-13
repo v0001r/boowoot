@@ -93,7 +93,7 @@ class YogaForm extends React.Component {
     var self = this;
     self.setState({
       name: self.props.userDetail.name,
-      phone: self.props.userDetail.phoneNumber
+      phone: self.props.userDetail.mobile
     });
   }
 
@@ -177,42 +177,40 @@ class YogaForm extends React.Component {
                         </label>
                       </div>
                     </div>
-                    <div className="form-inputfieldatyogaform">
-                      {this.state.service === "forothers" ? (
-                        <div>
-                          <div className="form-group ">
-                            <div className="inputfield">
-                              <TextValidator
-                                label="Name *  "
-                                validators={["required"]}
-                                errorMessages={"Please enter your Name !"}
-                                type="text"
-                                placeholder="Name"
-                                className="form-control"
-                                name="name"
-                                onChange={this.handleInputChange}
-                                value={this.state.name}
+                      <div>
+                        <div className="form-group ">
+                          <div className="inputfield">
+                            <TextValidator
+                              label="Name *  "
+                              validators={["required"]}
+                              errorMessages={"Please enter your Name !"}
+                              type="text"
+                              placeholder="Name"
+                              className="form-control"
+                              name="name"
+                              onChange={this.handleInputChange}
+                              value={this.state.name}
                               />
-                            </div>
-                          </div>
-                          <div className="form-group ">
-                            <div className="inputfield">
-                              <TextValidator
-                                label="Phone *"
-                                validators={["required"]}
-                                errorMessages={"Please enter your Phone no !"}
-                                type="number"
-                                placeholder="phone"
-                                className="form-control"
-                                name="phone"
-                                onChange={this.handleInputChange}
-                                value={this.state.phone}
-                              />
-                            </div>
                           </div>
                         </div>
-                      ) : null}
-                    </div>
+
+                        <div className="form-group ">
+                          <div className="inputfield">
+                            <TextValidator
+                              label="Phone *"
+                              validators={["required"]}
+                              errorMessages={"Please enter your Phone no !"}
+                              type="number"
+                              placeholder="phone"
+                              className="form-control"
+                              name="phone"
+                              onChange={this.handleInputChange}
+                              value={this.state.phone}
+                              />
+                          </div>
+                        </div>
+                      </div>
+                   
                     <div className="form-group">
                       <div className="inputfield">
                         <TextValidator

@@ -106,14 +106,14 @@ class LoginSignup extends Component {
 
                 {this.state.activeTab === "login" ? (
                   <div className="container-row">
-                    <div
+                    {/* <div
                       className="loginfacebook"
                       onClick={() => this.onLoginWithFb()}
                     >
                       <a href="/">
                         <i className="fa fa-facebook"></i>
                       </a>
-                    </div>
+                    </div> */}
 
                     <div className="OrloginWith">
                       Or{" "}
@@ -121,14 +121,14 @@ class LoginSignup extends Component {
                       with
                     </div>
 
-                    <div
+                    {/* <div
                       className="OrloginWith"
                       onClick={() => {
                         this.onLoginWithGoogle();
                       }}
                     >
                       <i className="fa fa-google"></i>
-                    </div>
+                    </div> */}
                   </div>
                 ) : null}
                 <br />
@@ -150,7 +150,7 @@ class LoginSignup extends Component {
                       </span>
                       Now
                     </center>
-                    <center>
+                    {/* <center>
                       <span
                         style={{
                           fontWeight: 600,
@@ -162,7 +162,7 @@ class LoginSignup extends Component {
                       >
                         Password Reset ?
                       </span>
-                    </center>
+                    </center> */}
                   </div>
                 ) : (
                   <center>

@@ -5,7 +5,7 @@ class Splash extends Component {
   render() {
     return (
       <div className="splash-container">
-        <div className="text-with-animation">BOWOOT</div>
+        <div className="text-with-animation">Fitfinity</div>
         <div className="subtext-with-animation">
           <div>Certified fitness expert, at unbelievable price,</div>
           <br />

@@ -59,7 +59,7 @@ export class PickServicePackage extends Component {
                       checked={this.state.trainer_category === "Basic"}
                       onChange={this.handleInputChange}
                       onClick={() => {
-                        this.props.getamount("49");
+                        this.props.getamount("4999");
                       }}
                     />
                     <label for="radio-3" className="radio-label">
@@ -86,7 +86,7 @@ export class PickServicePackage extends Component {
                       checked={this.state.trainer_category === "Standard"}
                       onChange={this.handleInputChange}
                       onClick={() => {
-                        this.props.getamount("49");
+                        this.props.getamount("5999");
                       }}
                     />
                     <label for="radio-4" className="radio-label">
@@ -113,7 +113,7 @@ export class PickServicePackage extends Component {
                       checked={this.state.trainer_category === "Premium"}
                       onChange={this.handleInputChange}
                       onClick={() => {
-                        this.props.getamount("49");
+                        this.props.getamount("7999");
                       }}
                     />
                     <label for="radio-5" className="radio-label">

@@ -19,7 +19,7 @@ class Privacy
 
                     <div className="topParagraph">
                       Read our terms below to learn more about your rights and
-                      responsibilities as a BOWOOT user.
+                      responsibilities as a Fitfinity user.
                     </div>
                   </div>
                   <img
@@ -48,10 +48,10 @@ class Privacy
                     10-November-2019.
                   </div>
                   <div className="formarginbottom">
-                    Bowoot Online Private Limited ("Bowoot") values your
+                    Fitfinity Online Private Limited ("Fitfinity") values your
                     privacy. In this Privacy Policy we describe the information
                     that we collect about you when you visit our website,
-                    www.Bowoot.com (the "Website") and use the services
+                    www.Fitfinity.com (the "Website") and use the services
                     available on the Website ("Services"), and how we use and
                     disclose that information.
                   </div>
@@ -59,7 +59,7 @@ class Privacy
                   <div className="formarginbottom">
                     If you have any questions or comments about the Privacy
                     Policy, please contact us at{" "}
-                    <a href="/support@Bowoot">support@Bowoot.com.</a> In terms
+                    <a href="/support@Fitfinity">support@Fitfinity.com.</a> In terms
                     of the Information Technology (Intermediaries Guidelines)
                     Rules, 2011 and the Information Technology (Reasonable
                     Security Practices and Procedures and Sensitive Personal
@@ -82,7 +82,7 @@ class Privacy
                   </div>
                   <div className="formarginbottom">
                     Consumers: During the Account registration process and
-                    during your usage of Bowoot’s website or application, we
+                    during your usage of Fitfinity website or application, we
                     will collect information such as your name, postal code,
                     telephone email address and other personal information. You
                     also may provide us with your, mailing address, and
@@ -111,7 +111,7 @@ class Privacy
                     <ul>
                       <li>
                         i) The Service Professional does not and will not have
-                        any objection to Bowoot sharing the Service
+                        any objection to Fitfinity sharing the Service
                         Professional’s personal information and documents,
                         including but not limited to name, gender, date of
                         birth, addresses, mobile number, email, education
@@ -131,7 +131,7 @@ class Privacy
                       <li>
                         iii) The Service Professional acknowledges that the
                         digital record of the Proprietary Information on the
-                        Verifier’s platform shall be accessible to Bowoot and
+                        Verifier’s platform shall be accessible to Fitfinity and
                         their authorized users/partners/affiliates/contractors
                         shall be entitled to access and update such digital
                         record on the Verifier’s platform, including data,
@@ -151,7 +151,7 @@ class Privacy
                         requires the same.
                       </li>
                       <li>
-                        v) Bowoot reserves its right to take appropriate actions
+                        v) Fitfinity reserves its right to take appropriate actions
                         (in its sole discretion) pursuant to the outcome of the
                         background check and verification.
                       </li>
@@ -159,9 +159,9 @@ class Privacy
                   </div>
 
                   <div className="formarginbottom">
-                    Bowoot reserves the right to record the conversations
+                    Fitfinity reserves the right to record the conversations
                     between service professionals and consumers facilitated by
-                    Bowoot through the messaging/chat mechanism on the platform
+                    Fitfinity through the messaging/chat mechanism on the platform
                     or the calls made through the virtual numbers provided to
                     safeguard the privacy of consumers and service
                     professionals. All the chat/messaging logs or call
@@ -236,7 +236,7 @@ class Privacy
                     forwarded.
                   </div>
                   <div className="formarginbottom">
-                    <strong>HOW PERSONAL INFORMATION IS USED IN BOWOOT</strong>
+                    <strong>HOW PERSONAL INFORMATION IS USED IN Fitfinity</strong>
                   </div>
 
                   <div className="formarginbottom">
@@ -261,7 +261,7 @@ class Privacy
                       <li>
                         To process billing and payment, including sharing with
                         third party payment gateways in connection with Website
-                        and/or Bowoot's products and Services;
+                        and/or Fitfinity's products and Services;
                       </li>
                       <li>
                         To improve and maintain our Website and our Services
@@ -273,9 +273,9 @@ class Privacy
                       </li>
                       <li>
                         To periodically send promotional emails to the email
-                        address you provide regarding new products from Bowoot,
-                        special offers from Bowoot or other information about
-                        Bowoot that we think you may find interesting;
+                        address you provide regarding new products from Fitfinity,
+                        special offers from Fitfinity or other information about
+                        Fitfinity that we think you may find interesting;
                       </li>
                       <li>
                         To contact you via email, telephone, facsimile or mail,
@@ -283,7 +283,7 @@ class Privacy
                         services or information you have requested;
                       </li>
                       <li>
-                        For Bowoot's market research purposes, including, but
+                        For Fitfinity's market research purposes, including, but
                         not limited to, the customization of the Website
                         according to your interests;
                       </li>
@@ -311,17 +311,17 @@ class Privacy
                         information we collect about you.
                       </li>
                       <li>
-                        From time to time, Bowoot may use personal information
+                        From time to time, Fitfinity may use personal information
                         for new and unanticipated uses not previously disclosed
                         in our Privacy Policy. If our information practices
                         change regarding information previously collected,
-                        Bowoot shall make reasonable efforts to provide notice
+                        Fitfinity shall make reasonable efforts to provide notice
                         and obtain consent of any such uses as may be required
                         by law.
                       </li>
                     </ul>
                     <div className="formarginbottom">
-                      At our sole discretion, Bowoot may offer any of the
+                      At our sole discretion, Fitfinity may offer any of the
                       following free services on the Website, which you may
                       select to use or receive at your option. Certain of the
                       following services may require you to provide additional
@@ -333,7 +333,7 @@ class Privacy
                     <div className="formarginbottom">
                       We may offer a free electronic newsletter to users. We
                       will gather the email addresses of users who sign up for
-                      Bowoot for the newsletter mailing list. Users may remove
+                      Fitfinity for the newsletter mailing list. Users may remove
                       themselves from this mailing list by opting out of
                       receiving newsletters during the registration process, by
                       following the link provided in each newsletter that points
@@ -389,7 +389,7 @@ class Privacy
                       We employ procedural and technological security measures,
                       which are reasonably designed to help protect your
                       personal information from unauthorized access or
-                      disclosure. Bowoot may use encryption, passwords, and
+                      disclosure. Fitfinity may use encryption, passwords, and
                       physical security measures to help protect your personal
                       information against unauthorized access and disclosure. No
                       security measures, however, are 100% complete. Therefore,
@@ -401,7 +401,7 @@ class Privacy
                       by, among other things, signing off after using a shared
                       computer, choosing a robust password that nobody else
                       knows or can easily guess, and keeping your log-in and
-                      password private. Bowoot is not responsible for the
+                      password private. Fitfinity is not responsible for the
                       unauthorized use of your information or for any lost,
                       stolen, compromised passwords, or for any activity on your
                       Account via unauthorized password activity.
@@ -420,7 +420,7 @@ class Privacy
                       <ol>
                         <li>
                           We may disclose your information including Personal
-                          Information if: (i) Bowoot reasonably believes that
+                          Information if: (i) Fitfinity reasonably believes that
                           disclosure is necessary in order to comply with a
                           legal process (such as a court order, search warrant,
                           etc.) or other legal requirement of any governmental
@@ -436,7 +436,7 @@ class Privacy
                         <li>
                           We may contract with various third parties for the
                           provision and maintenance of the Website, Services and
-                          our business operations, and Bowoot may need to share
+                          our business operations, and Fitfinity may need to share
                           your personal information and data generated by
                           cookies and aggregate information (collectively,
                           "information") with these vendors and service
@@ -491,20 +491,20 @@ class Privacy
                           governmental authority.
                         </li>
                         <li>
-                          In the event that Bowoot undergoes a change in
+                          In the event that Fitfinity undergoes a change in
                           control, including, without limitation, a merger or
-                          sale of all or substantially all of Bowoot's assets to
+                          sale of all or substantially all of Fitfinity's assets to
                           which this Website relates or other corporate
-                          reorganization in which Bowoot participates, and is
+                          reorganization in which Fitfinity participates, and is
                           thus merged with or acquired by a third party entity
-                          (a "Successor"), Bowoot hereby reserves the right to
+                          (a "Successor"), Fitfinity hereby reserves the right to
                           transfer the information we have collected from the
                           users of the Website and/or Services to such
-                          Successor.In addition, in the event of Bowoot's
+                          Successor.In addition, in the event of Fitfinity's
                           bankruptcy, reorganization, receivership, or
                           assignment for the benefit of creditors, or the
                           application or laws or equitable principles affecting
-                          creditors' rights generally, Bowoot may not be able to
+                          creditors' rights generally, Fitfinity may not be able to
                           control how your information is transferred, used, or
                           treated and reserves the right to transfer the
                           information we have collected from the users of the
@@ -517,9 +517,9 @@ class Privacy
                           your information or if you explicitly consent to such
                           disclosure upon receipt of a specific Service. For
                           instance, when you contract for a specific Service
-                          with another Registered User, Bowoot will send that
+                          with another Registered User, Fitfinity will send that
                           Registered User a notice that includes the personal
-                          information that you have chosen to allow Bowoot to
+                          information that you have chosen to allow Fitfinity to
                           reveal to users with whom you contract.
                         </li>
                       </ol>
@@ -557,24 +557,24 @@ class Privacy
                       however, that once you publicly post a Request, Offer,
                       Want, Feedback, or any other information onto the Website,
                       you may not be able to change or remove it. Once we have
-                      deleted or removed your Account, you agree that Bowoot
+                      deleted or removed your Account, you agree that Fitfinity
                       shall not be responsible for any personal information that
                       was not included within your deleted and/or removed
                       Account that remains on the Website.
                     </div>
                     <div className="formarginbottom">
                       IF YOUR PASSWORD HAS BEEN COMPROMISED FOR ANY REASON, YOU
-                      MUST IMMEDIATELY NOTIFY BOWOOT TO CHANGE YOUR PASSWORD.
+                      MUST IMMEDIATELY NOTIFY Fitfinity TO CHANGE YOUR PASSWORD.
                     </div>
                     <div className="formarginbottom">
                       <strong>Privacy Policy Updates</strong>
                     </div>
                     <div className="formarginbottom">
                       THIS POLICY IS CURRENT AS OF THE EFFECTIVE DATE SET FORTH
-                      ABOVE. BOWOOT MAY, IN ITS SOLE AND ABSOLUTE DISCRETION,
+                      ABOVE. Fitfinity MAY, IN ITS SOLE AND ABSOLUTE DISCRETION,
                       CHANGE THIS POLICY FROM TIME TO TIME BY UPDATING THIS
-                      DOCUMENT. BOWOOT WILL POST ITS UPDATED POLICY ON THE
-                      WEBSITE ON THIS PAGE. BOWOOT ENCOURAGES YOU TO REVIEW THIS
+                      DOCUMENT. Fitfinity WILL POST ITS UPDATED POLICY ON THE
+                      WEBSITE ON THIS PAGE. Fitfinity ENCOURAGES YOU TO REVIEW THIS
                       POLICY REGULARLY FOR ANY CHANGES. YOUR CONTINUED USE OF
                       THIS WEBSITE AND/OR CONTINUED PROVISION OF PERSONAL
                       INFORMATION TO US WILL BE SUBJECT TO THE TERMS OF THE
@@ -583,7 +583,7 @@ class Privacy
 
                     <div className="formarginbottom">
                       <strong>
-                        Bowoot India Technology Private Limited. All Rights
+                        Fitfinity India Technology Private Limited. All Rights
                         Reserved
                       </strong>
                     </div>

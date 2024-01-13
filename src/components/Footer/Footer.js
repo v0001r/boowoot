@@ -59,16 +59,16 @@ class Footer extends React.Component {
           >
             <div className="bowootfoot col-sm-3">
               <h4 className="foothead">
-                <strong>Bowoot</strong>
+                <strong>Fitfinity</strong>
               </h4>
               <ul className="itemsfoot">
                 <a href="/">
                   <li style={{ color: "white" }}>About us</li>
                 </a>
-                <a href="/diet">
+                <a href="#/diet">
                   <li style={{ color: "white" }}>Packages</li>
                 </a>
-                <a href="/diet">
+                <a href="#/diet">
                   <li style={{ color: "white" }}>How it Works</li>
                 </a>
                 <a href="#">
@@ -88,10 +88,10 @@ class Footer extends React.Component {
                 <strong>Services</strong>
               </h4>
               <ul className="itemsfoot service_mq_foot">
-                <a href="/fitnessplan">
+                <a href="#/fitnessplan">
                   <li style={{ color: "white" }}>Weightloss & Toning</li>
                 </a>
-                <a href="/fitnessplan">
+                <a href="#/fitnessplan">
                   <li style={{ color: "white" }}>Cardio Fitness</li>
                 </a>
                 <a onClick={() => {
@@ -99,7 +99,7 @@ class Footer extends React.Component {
                   }}>
                   <li style={{ color: "white" }}>Pre/Post Natal exercise</li>
                 </a>
-                <a href="fitnessplan">
+                <a href="#/fitnessplan">
                   <li style={{ color: "white" }}>Weight/resistance training</li>
                 </a>
                 <a  onClick={() => {
@@ -107,25 +107,25 @@ class Footer extends React.Component {
                   }}>
                   <li style={{ color: "white" }}>Corporate Fitness</li>
                 </a>
-                <a href="/booksession">
+                <a href="#/booksession">
                   <li style={{ color: "white" }}>Senior Fitness</li>
                 </a>
-                <a href="/booksession">
+                <a href="#/booksession">
                   <li style={{ color: "white" }}>Youth and Team Fitness</li>
                 </a>
-                <a href="/diet">
+                <a href="#/diet">
                   <li style={{ color: "white" }}>Group Training</li>
                 </a>
-                <a href="/booksession">
+                <a href="#/booksession">
                   <li style={{ color: "white" }}>Yoga training</li>
                 </a>
-                <a href="/booksession">
+                <a href="#/booksession">
                   <li style={{ color: "white" }}>Sports Conditioning</li>
                 </a>
-                <a href="/diet">
+                <a href="#/diet">
                   <li style={{ color: "white" }}>Nutrition Counselling</li>
                 </a>
-                <a href="/institute">
+                <a href="#/institute">
                   <li style={{ color: "white" }}>
                     Fitness/Nutritionist Certifications
                   </li>
@@ -137,10 +137,10 @@ class Footer extends React.Component {
                 <strong>FAQ</strong>
               </h4>
               <ul className="itemsfoot faq_item_mq">
-                <a href="/TermsConditions">
+                <a href="#/TermsConditions">
                   <li style={{ color: "white" }}>Terms & Conditions</li>
                 </a>
-                <a href="/Privacy">
+                <a href="#/Privacy">
                   <li style={{ color: "white" }}>Privacy Policy</li>
                 </a>
               </ul>

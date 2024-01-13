@@ -36,15 +36,15 @@ class Header extends Component {
   navfitnessUser = () => {
     this.props.typeOfService("FITNESS");
     this.props.history.push("/service/fitnesstrainer");
-    if (this.props.User) {
-      this.props.history.replace("/booksession");
+    if (this.user) {
+      this.props.history.push("/booksession");
     }
   };
   navYogaUser = () => {
     this.props.typeOfService("YOGA");
     this.props.history.push("/service/yogatrainer");
-    if (this.props.User) {
-      this.props.history.replace("/booksession");
+    if (this.user) {
+      this.props.history.push("/booksession");
     }
   };
   navDietUser = () => {
@@ -53,8 +53,7 @@ class Header extends Component {
   };
 
   async signout() {
-    localStorage.removeItem("token");
-    localStorage.removeItem("user_type");
+    localStorage.clear();
     this.props.history.replace("/");
     window.location.reload();
   }
@@ -73,7 +72,7 @@ class Header extends Component {
               className="bowootheadericon"
               src={require("../../assests/bowoot_icon.png")}
             />
-            BOWOOT
+            Fitfinity
           </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -95,34 +94,34 @@ class Header extends Component {
               <NavDropdown.Item onClick={() => this.navDietUser()}>
                 Diet Plans
               </NavDropdown.Item>
-              <NavDropdown.Item href="/fitnessplan">
+              <NavDropdown.Item href="#/fitnessplan">
                 Fitness Plans
               </NavDropdown.Item>
-              <NavDropdown.Item href="/institute">
+              <NavDropdown.Item href="#/institute">
                 Become A Personal Trainer/Nutritionist
               </NavDropdown.Item>
-              <NavDropdown.Item href="/shopnow">
+              <NavDropdown.Item href="#/shopnow">
                 Shop Now (Coming soon)
               </NavDropdown.Item>
-              <NavDropdown.Item href="/foodzone">
+              <NavDropdown.Item href="#/foodzone">
                 Food Zone (Coming soon)
               </NavDropdown.Item>
             </NavDropdown>
             {/* {this.props.typeofuser==="User"&& "Trainer"?null:( */}
             {this.user ? null : (
-              <Nav.Link href="/trainer" className="servie-link">
+              <Nav.Link href="#/trainer" className="servie-link">
                 Become a Trainer Partner
                 <br />
                 <p className="header1 service-link">(Signup for Trainers)</p>
               </Nav.Link>
             )}
             {(this.user && this.user_type == "U")? (
-              <Nav.Link href="/user/userDashboard" className="servie-link">
+              <Nav.Link href="#/user/userDashboard" className="servie-link">
                 Dashboard
               </Nav.Link>
             ) : null}
             {(this.user && this.user_type == "A")? (
-              <Nav.Link href="/admin/adminDashboard" className="servie-link">
+              <Nav.Link href="#/admin/adminDashboard" className="servie-link">
                 Dashboard
               </Nav.Link>
             ) : null}

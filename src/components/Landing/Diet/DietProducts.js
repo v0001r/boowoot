@@ -16,7 +16,7 @@ const DietProducts = [
     newPrice: "199",
     image: "vegan.png",
     description:
-      "People choose to follow vegan diet due to various reasons, one is todevoid all the animal products. Bowoot will provide the World’s best and most interesting vegan diet for you to achieve your goal."
+      "People choose to follow vegan diet due to various reasons, one is todevoid all the animal products. Fitfinity will provide the World’s best and most interesting vegan diet for you to achieve your goal."
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const DietProducts = [
     newPrice: "299",
     image: "healthy.png",
     description:
-      "Bowoot will provide you the diet that helps to maintain or improve overall health. This diet provides the body with essential nutrition: fluid, macronutrients, micronutrients, and adequate calories on your daily food consumptions which is needed for building a healthy lifestyle"
+      "Fitfinity will provide you the diet that helps to maintain or improve overall health. This diet provides the body with essential nutrition: fluid, macronutrients, micronutrients, and adequate calories on your daily food consumptions which is needed for building a healthy lifestyle"
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const DietProducts = [
     newPrice: "299",
     image: "gain_weight.png",
     description:
-      " Bowoot provides the World’s best and effective diet plans to achieve your muscle building or weight gain goal in minimal time in the easiest possible ways"
+      " Fitfinity provides the World’s best and effective diet plans to achieve your muscle building or weight gain goal in minimal time in the easiest possible ways"
   },
 
   {
@@ -45,7 +45,7 @@ const DietProducts = [
     newPrice: "599",
     image: "wedding.png",
     description:
-      "Bowoot provides the World’s best and effective diet plans to achieve your weight loss goal very easilyfor your special function"
+      "Fitfinity provides the World’s best and effective diet plans to achieve your weight loss goal very easilyfor your special function"
   },
   {
     id: 6,
@@ -84,7 +84,7 @@ const DietProducts = [
     newPrice: "2999",
     image: "custom.png",
     description:
-      "In regards with this diet plan Bowoot will connect you with our best experienced and Internationally Certified Nutritionists who will help you achieve your goal at the comfort of your personalizeddiet plan"
+      "In regards with this diet plan Fitfinity will connect you with our best experienced and Internationally Certified Nutritionists who will help you achieve your goal at the comfort of your personalizeddiet plan"
   }
 ];
 export default DietProducts;

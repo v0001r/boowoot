@@ -11,13 +11,15 @@ const FA = require("react-fontawesome");
 class Address extends React.Component {
   constructor(props) {
     super(props);
+    this.name = localStorage.getItem('name');
+    this.mobile = localStorage.getItem('mobile');
     this.state = {
       assistance: props.user.assistance,
       address: props.user.address,
       landmark: props.user.landmark,
       area: props.user.area,
-      name: props.userDetail.name ?  props.user.name:null,
-      phone: props.userDetail.phoneNumber ?  props.user.phone:null,
+      name: localStorage.getItem('name')?  localStorage.getItem('name'):null,
+      phone: localStorage.getItem('mobile') ?  localStorage.getItem('mobile'):null,
       status: "Session Booked",
       position: "",
       show: false,
@@ -98,8 +100,8 @@ class Address extends React.Component {
   myself() {
     var self = this;
     self.setState({
-      name: self.props.userDetail.name,
-      phone: self.props.userDetail.phoneNumber
+      name: this.name,
+      phone: this.mobile
     });
   }
   render() {
@@ -155,7 +157,7 @@ class Address extends React.Component {
                         className="form-control"
                         name="name"
                         onChange={this.handleInputChange}
-                        value={this.state.name}
+                        value={this.name}
                         validators={["required"]}
                         errorMessages={"This field is mandatory!"}
                       />
@@ -168,7 +170,7 @@ class Address extends React.Component {
                         className="form-control"
                         name="phone"
                         onChange={this.handleInputChange}
-                        value={this.state.phone}
+                        value={this.mobile}
                         validators={["required", "isPhoneMatch"]}
                         errorMessages={"This field is mandatory!"}
                       />

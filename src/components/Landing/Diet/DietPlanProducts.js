@@ -288,7 +288,7 @@ class Productinfo extends React.Component {
                   <span
                     className="dottinproductinfo"
                     onClick={() => {
-                      if (firebase.auth().currentUser) {
+                      if (localStorage.getItem('token')) {
                         this.props.getamount(person.newPrice);
                         this.props.getplan(person.content);
                         this.props.getdescription(person.description);

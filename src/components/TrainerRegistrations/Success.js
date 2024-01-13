@@ -58,7 +58,7 @@ class Success extends Component {
             }}
           >
             <strong>Note: </strong>Please wait for 24 hours for profile
-            verification and Download Bowoot app to keep track of all your
+            verification and Download Fitfinity app to keep track of all your
             activities.
           </div>
           <a onClick={() => this.onSubmit()}>

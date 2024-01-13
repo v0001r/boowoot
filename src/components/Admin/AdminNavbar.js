@@ -12,7 +12,7 @@ class AdminNavbar extends React.Component {
           <Nav.Link href="/admin/adminDashboard" className="admin-logo">
             <span style={{ fontSize: "20px", fontWeight: "bold" }}>ADMIN</span>
             <br />
-            <span style={{ fontSize: "12px", fontWeight: "bold" }}>BOWOOT</span>
+            <span style={{ fontSize: "12px", fontWeight: "bold" }}>Fitfinity Trainer</span>
           </Nav.Link>
 
           <div className="row">

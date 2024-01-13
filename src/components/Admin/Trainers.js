@@ -15,7 +15,7 @@ class Trainers extends React.Component{
     
       componentDidMount(){
         
-        fetch("http://localhost:5011/v1/trainers?page=1&limit=10", {
+        fetch("http://api.bowoot.com/v1/trainers?page=1&limit=10", {
           method: "GET", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -68,7 +68,6 @@ class Trainers extends React.Component{
                              
                                   <span style={{textTransform:"capitalize"}} className="pd">
                                     {resultant[item]._doc?resultant[item]._doc.name:null}
-
                                   </span>
                             
                                   <span className="pd">

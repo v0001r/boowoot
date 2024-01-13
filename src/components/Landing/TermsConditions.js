@@ -16,7 +16,7 @@ class TermsConditions extends React.Component {
 
                 <div className="topParagraph">
                   Read our terms below to learn more about your rights and
-                  responsibilities as a BOWOOT user.
+                  responsibilities as a Fitfinity user.
                 </div>
               </div>
               <img
@@ -37,7 +37,7 @@ class TermsConditions extends React.Component {
                   10-November-2019.
                 </div>
                 <div className="feedback">
-                  Bowoot Online Private Limited ("Bowoot"), primarily operates,
+                  Fitfinity Online Private Limited ("Fitfinity"), primarily operates,
                   controls and manages the Services (as defined below) provided
                   by it from its corporate office at #48, 29th Main , 5th
                   BlockSurvey No. 13,14 & 15, Nandini Layout, Yaswantpur,
@@ -50,18 +50,18 @@ class TermsConditions extends React.Component {
                   PLEASE READ THE TERMS OF USE THOROUGHLY AND CAREFULLY. The
                   terms and conditions set forth below ("Terms of Use") and the
                   Privacy Policy (as defined below) constitute a legally-binding
-                  agreement between Bowoot operating from its Bangalore
+                  agreement between Fitfinity operating from its Bangalore
                   Corporate Office and you. These Terms of Use contain
                   provisions that define your limits, legal rights and
                   obligations with respect to your use of and participation in
-                  (i) the Bowoot website and mobile application, including the
+                  (i) the Fitfinity website and mobile application, including the
                   classified advertisements, forums, various email functions and
-                  Internet links, and all content and Bowoot services available
-                  through the domain and sub-domains of Bowoot located at
-                  www.Bowoot.com
+                  Internet links, and all content and Fitfinity services available
+                  through the domain and sub-domains of Fitfinity located at
+                  www.Fitfinity.com
                 </div>
                 <div className="feedback">
-                  The Website is owned and operated by Bowoot Online Private
+                  The Website is owned and operated by Fitfinity Online Private
                   Limited.
                 </div>
                 <div className="feedback">
@@ -93,7 +93,7 @@ class TermsConditions extends React.Component {
                   <strong> 1. PRIVACY POLICY</strong>
                 </div>
                 <div className="feedback">
-                  Bowoot has established a Privacy Policy that explains to users
+                  Fitfinity has established a Privacy Policy that explains to users
                   how their information is collected and used. Your use of this
                   Website is governed by the Privacy Policy.
                 </div>
@@ -108,12 +108,12 @@ class TermsConditions extends React.Component {
                   </strong>
                 </div>
                 <div className="feedback">
-                  Bowoot reserves the right, in its sole discretion, to change,
+                  Fitfinity reserves the right, in its sole discretion, to change,
                   modify, or otherwise amend the Terms of Use, and any other
                   documents incorporated with legal framework for other
-                  legitimate business purposes, at any time, and Bowoot will
+                  legitimate business purposes, at any time, and Fitfinity will
                   post the amended Terms of Use at the domain
-                  ofwww.Bowoot.com/terms. It is your responsibility to review
+                  ofwww.Fitfinity.com/terms. It is your responsibility to review
                   the Terms of Use for any changes and you are encouraged to
                   check the Terms of Use frequently.
                 </div>
@@ -121,10 +121,10 @@ class TermsConditions extends React.Component {
                   <strong>3. LICENSE TO ACCESS</strong>
                 </div>
                 <div className="feedback">
-                  Bowoot hereby grants you a non-exclusive, revocable license to
+                  Fitfinity hereby grants you a non-exclusive, revocable license to
                   use the Website as set forth in the Terms of Use; provided,
                   however, that (i) you will not copy, distribute, or make
-                  derivative works of the Website in any medium without Bowoot's
+                  derivative works of the Website in any medium without Fitfinity's
                   prior written consent; (ii) you will not alter or modify any
                   part of the Website other than as may be reasonably necessary
                   to use the Website for its intended purposes; and (iii) you
@@ -144,7 +144,7 @@ class TermsConditions extends React.Component {
                   Account (defined below) may be terminated without warning if
                   we at our discretion, believe that you are under the age of 18
                   or that you are not complying with any applicable laws, rules
-                  or regulations.You need not register with Bowoot to simply
+                  or regulations.You need not register with Fitfinity to simply
                   visit and view the Website, but to access and participate in
                   certain features of the Website, you will need to create a
                   password-protected account ("Account"). To create an account,
@@ -153,19 +153,19 @@ class TermsConditions extends React.Component {
                   create a password. You may also register for an Account using
                   your existing Facebook account and log-in credentials (your
                   "Third-Party Site Password").You are solely responsible for
-                  safeguarding your Bowoot password at all times and shall keep
+                  safeguarding your Fitfinity password at all times and shall keep
                   your Passwords secure at all times. You shall be solely
                   responsible for all activity that occurs on your Account and
-                  you shall notify Bowoot immediately of any breach of security
+                  you shall notify Fitfinity immediately of any breach of security
                   or any unauthorized use of your Account. Similarly, you shall
-                  never use another's Account without Bowoot’s permission. You
+                  never use another's Account without Fitfinity permission. You
                   agree that you will not misrepresent yourself or represent
                   yourself as another user of the Website and/or the Services
                   offered through the Website.You hereby expressly acknowledge
-                  and agree that you yourself and not Bowoot will be liable
+                  and agree that you yourself and not Fitfinity will be liable
                   foryour losses, damages etc. (whether direct or indirect)
                   caused by an unauthorized use of your Account. Notwithstanding
-                  the foregoing, you may be liable for the losses of Bowoot or
+                  the foregoing, you may be liable for the losses of Fitfinity or
                   others due to such unauthorized use.An Account holder is
                   sometimes referred to herein as a "Registered User."
                 </div>
@@ -179,7 +179,7 @@ class TermsConditions extends React.Component {
                       You shall not use any automated system, including but not
                       limited to, "robots," "spiders," "offline readers,"
                       "scrapers," etc., to access the Website for any purpose
-                      without Bowoot'sprior written approval.
+                      without Fitfinity'sprior written approval.
                     </li>
                     <li>
                       You shall not in any manual or automated manner collect
@@ -192,7 +192,7 @@ class TermsConditions extends React.Component {
                     </li>
                     <li>
                       You shall not in any way that transmits more request
-                      messages to the Bowoot servers, or any server of a Bowoot
+                      messages to the Fitfinity servers, or any server of a Fitfinity
                       subsidiary or affiliate, in a given period of time than a
                       human can reasonably produce in the same period by using a
                       conventional online web browser; provided, however, that
@@ -200,22 +200,22 @@ class TermsConditions extends React.Component {
                       robots to copy materials from the site for the sole
                       purpose of creating publicly available searchable indices
                       of the materials, but not caches or archives of such
-                      material. Bowoot reserves the right to revoke these
+                      material. Fitfinity reserves the right to revoke these
                       exceptions either generally or in specific cases.
                     </li>
                     <li>
                       You shall not recruit, solicit, or contact in any form
                       Service Professionals or Service Users for employment or
-                      contracting for a business not affiliated with Bowoot
-                      without express written permission from Bowoot.
+                      contracting for a business not affiliated with Fitfinity
+                      without express written permission from Fitfinity.
                     </li>
                     <li>
                       You shall not take any action that (i) unreasonably
-                      encumbers or, in Bowoot's sole discretion, may
+                      encumbers or, in Fitfinity's sole discretion, may
                       unreasonably encumber the Website's infrastructure; (ii)
                       interferes or attempts to interfere with the proper
                       working of the Website or any third-party participation in
-                      the Website; or (iii) bypasses Bowoot's measures that are
+                      the Website; or (iii) bypasses Fitfinity's measures that are
                       used to prevent or restrict access to the Website.
                     </li>
                     <li>
@@ -232,12 +232,12 @@ class TermsConditions extends React.Component {
                 </div>
                 <div className="feedback">
                   Your access to, use of, and participation in the Website is
-                  subject to the Terms of Use and all applicable Bowoot
-                  regulations, guidelines and additional policies that Bowoot
+                  subject to the Terms of Use and all applicable Fitfinity
+                  regulations, guidelines and additional policies that Fitfinity
                   may set forth from time to time, including without limitation,
                   a copyright policy and any other restrictions or limitations
-                  that Bowoot publishes on the Website (the "Additional
-                  Policies"). Bowoot, in its sole discretion, may terminate your
+                  that Fitfinity publishes on the Website (the "Additional
+                  Policies"). Fitfinity, in its sole discretion, may terminate your
                   Account at any time without prior notice to you as well as
                   initiate appropriate legal proceedings, if necessary.
                 </div>
@@ -260,7 +260,7 @@ class TermsConditions extends React.Component {
                       herein as "Submitted Content" and the posting of Submitted
                       Content is sometimes referred to as a "Posting" or as
                       "Postings") that (1)contains falsehoods or
-                      misrepresentations that could damage Bowoot or any third
+                      misrepresentations that could damage Fitfinity or any third
                       party, (2)misrepresents the source of anything you post,
                       including impersonation of another individual or entity or
                       any false or inaccurate biographical information for any
@@ -283,7 +283,7 @@ class TermsConditions extends React.Component {
                       is copyrighted, protected by trade secret or otherwise
                       subject to third-party proprietary rights, (7) distributes
                       or contains viruses or any other technologies that may
-                      harm Bowoot, or the interests or property of Bowoot users,
+                      harm Fitfinity, or the interests or property of Fitfinity users,
                       (8) is intended to threaten, stalk, defame, defraud,
                       degrade, victimize, or intimidate an individual or group
                       of individuals for any reason on the basis of age, gender,
@@ -311,7 +311,7 @@ class TermsConditions extends React.Component {
                   limitation or discrimination based on race, color, religion,
                   sex, national origin, age, handicap or other protected class.
                   Bowootwill not knowingly accept any Posting which is in
-                  violation of the law. Bowoot has the right, in its sole
+                  violation of the law. Fitfinity has the right, in its sole
                   discretion and without prior notice to you; to immediately
                   remove any posting that discriminates or is any way in
                   violation of any law.
@@ -336,7 +336,7 @@ class TermsConditions extends React.Component {
                   after you negotiate an agreement for such Service, a clear
                   typographical error is made, or you cannot authenticate the
                   Service Professional's identity (5) manipulate our fee
-                  structure, the billing process, or fees owed to Bowoot; post
+                  structure, the billing process, or fees owed to Fitfinity; post
                   false, inaccurate, misleading, defamatory, or libelous content
                   (including personalinformation about any Website user), (6)
                   take any action that may undermine the Feedback or ratings
@@ -358,25 +358,25 @@ class TermsConditions extends React.Component {
                   conditions in an Offer or Want that restrict a Service
                   Professional or a Service User from leaving Feedback. If you
                   violate any ofthe above-referenced rules in connection with
-                  leaving Feedback, Bowoot, in its sole discretion, may take any
+                  leaving Feedback, Fitfinity, in its sole discretion, may take any
                   of the following actions: (i) cancel your Feedback or any of
                   your Postings; (ii) limit your Account privileges; (iii)
                   suspend your Account; and/or (iv) decrease your status
-                  earnedvia the Feedback page. You may contact Bowoot regarding
+                  earnedvia the Feedback page. You may contact Fitfinity regarding
                   any inappropriate use of Feedback via-email at
-                  <a href="/support@Bowoot"> support@Bowoot.com.</a>
+                  <a href="/support@Fitfinity"> support@Fitfinity.com.</a>
                 </div>
                 <div className="feedback">
                   IN THE EVENT OF ANY DISPUTE BETWEEN USERS OF THE WEBSITE
-                  CONCERNING FEEDBACK, BOWOOT HAS THE RIGHT, IN ITS SOLE AND
+                  CONCERNING FEEDBACK, Fitfinity HAS THE RIGHT, IN ITS SOLE AND
                   ABSOLUTE DISCRETION, TO REMOVE SUCH FEEDBACK OR TAKE ANY
                   ACTION IT DEEMS REASONABLE WITHOUT INCURRING ANY LIABILITY
                   THEREFROM.
                 </div>
                 <div className="feedback">
                   <strong>
-                    Bowoot does not and cannot review every Posting posted to
-                    the Website. These prohibitionsdo not require Bowoot to
+                    Fitfinity does not and cannot review every Posting posted to
+                    the Website. These prohibitionsdo not require Fitfinity to
                     monitor, police or remove any Postings or other information
                     submitted by you or any other user.
                   </strong>
@@ -403,7 +403,7 @@ class TermsConditions extends React.Component {
                 <div className="feedback">
                   <strong>
                     12. PROFILES AND OFFERS CANNOT USE TECHNIQUES TO AVOID OR
-                    CIRCUMVENT BOWOOT FEES
+                    CIRCUMVENT Fitfinity FEES
                   </strong>
                 </div>
                 <div className="feedback">
@@ -415,12 +415,12 @@ class TermsConditions extends React.Component {
                   Posting limits; (c) post a single Service but offer additional
                   identical services in the Service description; (d) charge fees
                   for traveling further than desired to provide the Service; (e)
-                  offer the opportunity through Bowoot to purchase the Service
-                  or any other service outside of Bowoot; (f) use their Profile
+                  offer the opportunity through Fitfinity to purchase the Service
+                  or any other service outside of Fitfinity; (f) use their Profile
                   page or user name to promote services not offered on or
                   through theWebsite and/or prohibited services. In case we
                   realize that any professional is involved in any of the above
-                  activities, Bowoot holds the sole discretion to blacklist the
+                  activities, Fitfinity holds the sole discretion to blacklist the
                   professional and withhold any outstanding credits or payments
                   to the professional.
                 </div>
@@ -446,16 +446,16 @@ class TermsConditions extends React.Component {
                   </strong>
                 </div>
                 <div className="feedback">
-                  The Service Professional will procure the Products from Bowoot
+                  The Service Professional will procure the Products from Fitfinity
                   only for rendering the Services facilitated through the
-                  Bowoot’s Platform. Any Product purchased by the Service
-                  Professional from Bowoot shall only be used for the sole
-                  purpose of rendering services booked through Bowoot Platform.
-                  Products sold by Bowoot to the Service Professional should not
+                  Fitfinity Platform. Any Product purchased by the Service
+                  Professional from Fitfinity shall only be used for the sole
+                  purpose of rendering services booked through Fitfinity Platform.
+                  Products sold by Fitfinity to the Service Professional should not
                   be used for personal consumption by the Service Professional
                   under any circumstances. If a Service Professional violates
                   any of the above-referenced rules in connection with his or
-                  her Posting, Bowoot, in its sole discretion, may take any of
+                  her Posting, Fitfinity, in its sole discretion, may take any of
                   the following actions: (a) cancel the Posting; (b) limit the
                   Service Professional's Account privileges; (c) suspend the
                   Service Professional's Account; (d) cause the Service
@@ -485,7 +485,7 @@ class TermsConditions extends React.Component {
                   misuse any options made available now or in the future by
                   Bowootin connection with the use or purchase of any Service.
                   If a Service Professional violates any of the above-referenced
-                  rules in connection with his or her Posting, Bowoot, in its
+                  rules in connection with his or her Posting, Fitfinity, in its
                   sole discretion, may take any of the following actions: (a)
                   cancel the Posting; (b) limit the Service Professional's
                   Account privileges; (c) suspend the Service Professional's
@@ -505,24 +505,24 @@ class TermsConditions extends React.Component {
                   The Website may now or in the future permit the submission of
                   videos or other communications submitted by you and other
                   users. You understand that whether or not such Submitted
-                  Content is published, Bowoot does not guarantee any
+                  Content is published, Fitfinity does not guarantee any
                   confidentiality with respect to any Submitted Content.You
                   agree that any Submitted Content provided by you for which you
                   authorize to be searchable by Registered Users who have access
                   to the Website is provided on a non-proprietary and
-                  non-confidential basis. You agree that Bowoot shall be free to
+                  non-confidential basis. You agree that Fitfinity shall be free to
                   use or disseminate such freely searchable Submitted Content on
                   an unrestricted basis for the purpose of providing the
                   Services. You are aware that any information provided by you
                   in the Submitted Content towards locating aprofessional who
                   ordinarily is bound to maintain confidentiality under law with
                   his/her client (i.e. a doctor or a lawyer) is not extended to
-                  Bowoot.Bowoot may also disclose user information including
-                  personal information if Bowoot reasonablybelieves that
+                  Fitfinity.Fitfinity may also disclose user information including
+                  personal information if Fitfinity reasonablybelieves that
                   disclosure (i) is necessary in order to comply with a legal
                   process (such as a court order, search warrant, etc.) or other
                   legal requirement of any governmental authority, (ii) would
-                  potentially mitigate Bowoot’s liability in an actual or
+                  potentially mitigate Fitfinity liability in an actual or
                   potential lawsuit, (iii) is otherwise necessary or appropriate
                   to protect our rights or property, or the rights or property
                   of any person or entity, (iv) to enforce this Agreement
@@ -542,19 +542,19 @@ class TermsConditions extends React.Component {
                 </div>
                 <div className="feedback">
                   <strong>
-                    18. YOUR OWNERSHIP RIGHTS AND LICENSE TO BOWOOT
+                    18. YOUR OWNERSHIP RIGHTS AND LICENSE TO Fitfinity
                   </strong>
                 </div>
                 <div className="feedback">
                   You retain all of your ownership rights in your Submitted
                   Content. However, by submitting the Submitted Content to
-                  Bowoot for posting on the Website, you hereby grant, and you
+                  Fitfinity for posting on the Website, you hereby grant, and you
                   represent and warrant that you have the right to grant, to
-                  Bowoot a perpetual, worldwide, non-exclusive, royalty-free,
+                  Fitfinity a perpetual, worldwide, non-exclusive, royalty-free,
                   sublicense able and transferable license to link to, use,
                   reproduce, distribute, reformat, translate, prepare derivative
                   works of, display, and perform the Submitted Content in
-                  connection with the Website and Bowoot's (and its successor's)
+                  connection with the Website and Fitfinity's (and its successor's)
                   business operations, including without limitation, for the
                   promotion and redistribution of any part or all of the
                   Website, and any derivative works thereof, in any media
@@ -576,54 +576,54 @@ class TermsConditions extends React.Component {
                   automatically expire.
                 </div>
                 <div className="feedback">
-                  <strong>19. BOWOOT'S DISCLAIMERS AND RIGHT TO REMOVE</strong>
+                  <strong>19. Fitfinity'S DISCLAIMERS AND RIGHT TO REMOVE</strong>
                 </div>
                 <div>
-                  Bowoot does not endorse any Submitted Content or any opinion,
-                  recommendation, or advice expressed therein, and Bowoot
+                  Fitfinity does not endorse any Submitted Content or any opinion,
+                  recommendation, or advice expressed therein, and Fitfinity
                   expressly disclaims any and all liability in connection with
-                  all Submitted Content. Bowoot does not permit copyright
+                  all Submitted Content. Fitfinity does not permit copyright
                   infringing activities and infringement of intellectual
-                  property rights on the Website, and Bowoot will remove any
+                  property rights on the Website, and Fitfinity will remove any
                   Data (as defined below) or Submitted Content if properly
                   notified, pursuant to the "take down" notification procedure
                   described in Section J below, that such Posting or Submitted
                   Content infringes on another's intellectual property rights.
-                  Bowoot reserves the right to remove any Data or Submitted
-                  Content without prior notice. Bowoot will also terminate a
+                  Fitfinity reserves the right to remove any Data or Submitted
+                  Content without prior notice. Fitfinity will also terminate a
                   user's access to the Website, if he or she is determined to be
                   a repeat infringer. A repeat infringer is a Website user who
                   has been notified of infringing activity more than twice and/
                   or has had Submitted Content removed from the Websitemore than
-                  twice. Bowoot also reserves the right, in its sole and
+                  twice. Fitfinity also reserves the right, in its sole and
                   absolute discretion, to decide whether any Data or Submitted
                   Content is appropriate and complies with these Terms of Use
                   for all violations, in addition to copyright infringement and
                   violations of intellectual property law, including, but not
                   limited to, pornography, obscene or defamatory material, or
-                  excessive length. Bowoot may remove such Submitted Content
+                  excessive length. Fitfinity may remove such Submitted Content
                   and/or terminate a user's access for uploading suchmaterial in
                   violation of these Terms of Use at any time, without prior
                   notice and in its sole discretion. You are solely responsible
                   for the photos, profiles and other content, including, without
                   limitation, Submitted Content that you publish or display on
                   or through the Website, or transmit to other Website users.
-                  You understand and agree that Bowoot may, in its sole
+                  You understand and agree that Fitfinity may, in its sole
                   discretionand without incurring any liability, review and
                   delete or remove any Submitted Content that violates this
                   Agreement or which might be offensive, illegal, or that might
                   violate the rights, harm, or threaten the safety of Website
                   users or others. You acknowledge and understand that when
                   using the Website, you will be exposed to Submitted Content
-                  from a variety of sources, and that Bowoot is not responsible
+                  from a variety of sources, and that Fitfinity is not responsible
                   for the accuracy, usefulness, safety, or intellectual property
                   rights of or relating to such Submitted Content. You further
                   acknowledge and understand that you may be exposed to
                   Submitted Content that is inaccurate, offensive, indecent, or
                   objectionable, and you agree to waive, and hereby do waive,
                   any legal or equitable rights or remedies you have or may have
-                  against Bowoot with respect thereto, and agree to indemnify
-                  andhold Bowoot, its owners, members, managers, operators,
+                  against Fitfinity with respect thereto, and agree to indemnify
+                  andhold Fitfinity, its owners, members, managers, operators,
                   directors, officers, agents, affiliates, and/or licensors,
                   harmless to the fullest extent allowed by law regarding all
                   matters related to your use of the Website.
@@ -633,14 +633,14 @@ class TermsConditions extends React.Component {
                 </div>
                 <div className="feedback">
                   If you send or transmit any communications, comments,
-                  questions, suggestions, or related materials to Bowoot,
+                  questions, suggestions, or related materials to Fitfinity,
                   whether by letter, email, telephone, or otherwise
                   (collectively, "Suggestions"), suggesting or recommending
                   changes to the Website, including, without limitation, new
                   features or functionality relating thereto, all such
                   Suggestions are, and will be treated as, non-confidential and
                   non-proprietary. You hereby assign all right, title, and
-                  interest in, and Bowoot is free to use, without any
+                  interest in, and Fitfinity is free to use, without any
                   attribution or compensation to you, any ideas, know-how,
                   concepts, techniques, or other intellectual property and
                   proprietary rights contained in the Suggestions, whether or
@@ -648,7 +648,7 @@ class TermsConditions extends React.Component {
                   limited to,developing, manufacturing, having manufactured,
                   licensing, marketing, and selling, directly or indirectly,
                   products and services using such Suggestions. You understand
-                  and agree that Bowoot is not obligated to use, display,
+                  and agree that Fitfinity is not obligated to use, display,
                   reproduce, or distribute any such ideas, know-how, concepts,
                   or techniques contained in the Suggestions, and you have no
                   right to compel such use, display, reproduction, or
@@ -664,15 +664,15 @@ class TermsConditions extends React.Component {
                   </strong>
                 </div>
                 <div className="feedback">
-                  Bowoot has high regard for intellectual property and expects
-                  the same level of standard to be employed by its users. Bowoot
+                  Fitfinity has high regard for intellectual property and expects
+                  the same level of standard to be employed by its users. Fitfinity
                   may, in appropriate circumstances and at its discretion,
                   terminate the Account or prohibit access to the Website of
                   users who infringe upon the intellectual propertyrights of
                   others.If you believe that your work has been copied and
                   posted on the Website in a way that constitutescopyright
                   infringement and/or trademark infringement, please send the
-                  following information to us at <a href="">help@Bowoot.com</a>
+                  following information to us at <a href="">help@Fitfinity.com</a>
                   (a) identification of the copyrighted and/or trademarked work
                   claimed to have been infringed, or, if multiple works at a
                   single online site are covered by a single notification, a
@@ -683,11 +683,11 @@ class TermsConditions extends React.Component {
                   that is claimed to be infringing or to be the subject of
                   infringing activity and that is to be removed or access to
                   which is to be disabled at the Website, and information
-                  reasonably sufficient to permit Bowoot to locate the material.
+                  reasonably sufficient to permit Fitfinity to locate the material.
                   (d) an electronic or physical signature of the person
                   authorized to act on behalf of the owner of an exclusive
                   interest that is allegedly infringed; and (e) information
-                  reasonably sufficient to permit Bowoot to contact you as the
+                  reasonably sufficient to permit Fitfinity to contact you as the
                   complaining party, such as an address, telephone number, and,
                   if available, an electronic mail address at which you may be
                   contacted; (f) a statement by you, made under penalty of
@@ -697,7 +697,7 @@ class TermsConditions extends React.Component {
                   statement by you comprised of the foregoing points is referred
                   to herein as the "Notice."Only the intellectual property
                   rights owner is permitted to report potentially infringing
-                  items through Bowoot's reporting system set forth above. If
+                  items through Fitfinity's reporting system set forth above. If
                   you are not the intellectual property rights owner, you should
                   contact the intellectual property rights owner and they can
                   choose whether to use the procedures set forth in these Terms
@@ -709,13 +709,13 @@ class TermsConditions extends React.Component {
                   </strong>
                 </div>
                 <div className="feedback">
-                  Bowoot reserves the right at any time and from time to time to
+                  Fitfinity reserves the right at any time and from time to time to
                   modify or discontinue, temporarily or permanently, the Website
                   (or any part thereof) with or without notice and in its sole
-                  discretion. You agree that Bowoot shall not be liable to you
+                  discretion. You agree that Fitfinity shall not be liable to you
                   or to any third party for any modification, suspension or
-                  discontinuance of Bowoot services. You hereby acknowledge and
-                  agree that Bowoot, in its sole and absolute discretion, has
+                  discontinuance of Fitfinity services. You hereby acknowledge and
+                  agree that Fitfinity, in its sole and absolute discretion, has
                   the right (but not the obligation) to delete, terminate, or
                   deactivate your Account, block your email or IP address,
                   cancel the Website or otherwise terminate your access to or
@@ -723,18 +723,18 @@ class TermsConditions extends React.Component {
                   or remove and discard any Submitted Content on the Website
                   ("Termination of Service"), immediately and without notice,
                   for any reason, including without limitation, Account
-                  inactivity or if Bowoot believes or has reason to believe that
+                  inactivity or if Fitfinity believes or has reason to believe that
                   you have violated any provision of the Terms of Use.You may
                   cancel your use of the Website and/or terminate the Terms of
                   Use with or without cause at any time by following the link in
                   your Account under "Account Preferences" to "Deactivate
-                  Account." Unless Bowoot has previously cancelled or terminated
+                  Account." Unless Fitfinity has previously cancelled or terminated
                   your use of the Website (in which case subsequent notice by
-                  Bowoot shall not be required), if you provided a valid email
-                  address during registration, Bowoot will notify you via email
+                  Fitfinity shall not be required), if you provided a valid email
+                  address during registration, Fitfinity will notify you via email
                   of any such termination or cancellation, which shall be
-                  effective immediately upon Bowoot's delivery ofsuch notice.
-                  You agree to indemnify and hold Bowoot, and its officers,
+                  effective immediately upon Fitfinity's delivery ofsuch notice.
+                  You agree to indemnify and hold Fitfinity, and its officers,
                   managers, members, affiliates, successor, assigns, directors,
                   agents, service professionals, suppliers, and employees
                   harmless from any claim or demand, including reasonable
@@ -749,7 +749,7 @@ class TermsConditions extends React.Component {
                 <div className="feedback">
                   <strong>
                     <h4>
-                      BOWOOT OWNS OR HOLDS THE LICENSES TO ALL DATA AND MARKS ON
+                      Fitfinity OWNS OR HOLDS THE LICENSES TO ALL DATA AND MARKS ON
                       THE WEBSITE
                     </h4>
                   </strong>
@@ -760,22 +760,22 @@ class TermsConditions extends React.Component {
                   scripts, graphics, photos, sounds, music, videos, interactive
                   features and the like ("Data") and the trademarks, service
                   marks and logos contained therein ("Marks"), are owned by
-                  Bowoot. Other trademarks, names and logos on this Website are
+                  Fitfinity. Other trademarks, names and logos on this Website are
                   the property of their respective owners.
                 </div>
                 <div className="feedback">
                   <strong>
-                    21. BOWOOT'S LICENSE TO YOU FOR THE USE OF DATA AND MARKS
+                    21. Fitfinity'S LICENSE TO YOU FOR THE USE OF DATA AND MARKS
                   </strong>
                 </div>
                 <div className="feedback">
-                  The Website contains Bowoot's Data and Marks, which are, or
+                  The Website contains Fitfinity's Data and Marks, which are, or
                   may become, protected by copyright, trademark, patent, trade
-                  secret and other laws, and Bowoot owns and retains all rights
-                  in the Bowoot Data and Marks. Subject to these Terms of Use,
-                  Bowoot hereby grants you a limited, revocable,
+                  secret and other laws, and Fitfinity owns and retains all rights
+                  in the Fitfinity Data and Marks. Subject to these Terms of Use,
+                  Fitfinity hereby grants you a limited, revocable,
                   nontransferable, nonsublicensable license to reproduce and
-                  display the Bowoot Data (excluding any software source code)
+                  display the Fitfinity Data (excluding any software source code)
                   solely for your personal use in connection with accessing and
                   participating in the Website. The Website may also contain
                   Data of other users or licensors, which you shall not copy,
@@ -786,11 +786,11 @@ class TermsConditions extends React.Component {
                   <strong>22. FEES INCURRED BY SERVICE PROFESSIONALS</strong>
                 </div>
                 <div className="feedback">
-                  Joining Bowoot, opening an Account, posting Services and
-                  viewing posted Services is free. Bowoot reserves the right at
+                  Joining Fitfinity, opening an Account, posting Services and
+                  viewing posted Services is free. Fitfinity reserves the right at
                   its sole discretion to charge fees to Service Professionals
-                  for other services that Bowoot may provide in the future.
-                  Bowoot may also in certain categories require Service
+                  for other services that Fitfinity may provide in the future.
+                  Fitfinity may also in certain categories require Service
                   Professionals to make payments for following up on job leads
                   i.e. requests posted by Service Users, and permitting the
                   Service Professional to contact the Service User (“Lead Fee”)
@@ -829,11 +829,11 @@ class TermsConditions extends React.Component {
                   Service User’s request for service but the Service User does
                   not open or access the Service Professional’s response, the
                   Lead Fee shall be reimbursed to the Service Professional. The
-                  decision of Bowoot pertaining to the above shall be final and
-                  binding.Bowoot offers premium services to Service
+                  decision of Fitfinity pertaining to the above shall be final and
+                  binding.Fitfinity offers premium services to Service
                   Professionals for a fee and may in the future offer additional
                   services, like tax preparation and bookkeeping that Service
-                  Professionals can also choose to purchase. Bowoot reserves the
+                  Professionals can also choose to purchase. Fitfinity reserves the
                   right to charge fees for these services at its sole
                   discretion.
                 </div>
@@ -841,23 +841,23 @@ class TermsConditions extends React.Component {
                   <strong> 23. FEES INCURRED BY SERVICE USERS</strong>
                 </div>
                 <div className="feedback">
-                  Joining Bowoot, opening an Account, viewing posted Services,
-                  and bidding on posted Services isfree. Bowoot currently does
+                  Joining Fitfinity, opening an Account, viewing posted Services,
+                  and bidding on posted Services isfree. Fitfinity currently does
                   not charge Service Users for transactions completed on the
                   Website between Service Users and Services Professionals.
-                  However, Bowoot reserves the right to chargea fee to Service
+                  However, Fitfinity reserves the right to chargea fee to Service
                   Users in the future on a per-transaction basis or in any other
                   manner, and reserves the right to do so in its sole
                   discretion. Changes to this Fee Policy are effective after
-                  Bowoot has provided you with thirty (30) days' notice by
+                  Fitfinity has provided you with thirty (30) days' notice by
                   posting the changes on the Website. If applicable, you agree
-                  to pay all fees or charges to your Account based on Bowoot's
+                  to pay all fees or charges to your Account based on Fitfinity's
                   fees, charges, and billing terms then in effect. If you do not
-                  pay on time or if Bowoot cannot charge your credit card, any
-                  payment gateway or other payment method for any reason, Bowoot
+                  pay on time or if Fitfinity cannot charge your credit card, any
+                  payment gateway or other payment method for any reason, Fitfinity
                   reserves the right to either suspend or terminate your access
                   to the Website and Account and terminate these Terms of Use.
-                  You are expressly agreeing that Bowoot is permitted to bill
+                  You are expressly agreeing that Fitfinity is permitted to bill
                   you forthe applicable fees, any applicable tax and any other
                   charges you may incur in connection with your use of this
                   Website and the fees will be billed to your credit card, a
@@ -865,8 +865,8 @@ class TermsConditions extends React.Component {
                   you make a purchase or register for a fee-based service. If
                   you cancel your Account at any time, you will not receive any
                   refund. If you have a balance due on any account, you agree
-                  that Bowoot may charge such unpaid fees to your credit card or
-                  otherwise bill you for such unpaid fees. Bowoot reserves its
+                  that Fitfinity may charge such unpaid fees to your credit card or
+                  otherwise bill you for such unpaid fees. Fitfinity reserves its
                   right to initiate appropriate legal proceedings, if necessary,
                   in its sole discretion, to recover such outstanding amounts.
                 </div>
@@ -874,7 +874,7 @@ class TermsConditions extends React.Component {
                   <strong>24. REFUND POLICY</strong>
                 </div>
                 <div className="feedback">
-                  All commissions payable to Bowoot by Service Professionals on
+                  All commissions payable to Fitfinity by Service Professionals on
                   consummated transactions, i.e. exchange of services for
                   consideration, are final and non-refundable.The nominal amount
                   paid while booking the trial session will be adjusted with the
@@ -900,25 +900,25 @@ class TermsConditions extends React.Component {
                   are solely responsible for determining your own tax reporting
                   requirements in consultation with tax advisors, and that we
                   cannot and do not offer tax advice to either hosts or guests.
-                  Further, you understand that Bowoot shall not be responsible
+                  Further, you understand that Fitfinity shall not be responsible
                   or liable in any manner in relation to tax liability of a
                   Service User or a Service Professional.
                 </div>
                 <div className="feedback">
                   <strong>
-                    26. BOWOOT IS NOT A PARTY TO ANY SERVICE CONTRACT
+                    26. Fitfinity IS NOT A PARTY TO ANY SERVICE CONTRACT
                   </strong>
                 </div>
                 <div className="feedback">
                   Each Registered User hereby acknowledges and agrees that
-                  Bowoot is NOT a party to any oral or written Agreement for
+                  Fitfinity is NOT a party to any oral or written Agreement for
                   Service, Negotiation Worksheet, or any contract entered into
                   between Registered Users in connection with any Service
                   offered, directly or indirectly, through the Website. Each
                   Registered User acknowledges, agrees and understands that
-                  Bowoot only seeks to provide a platform wherein the Service
+                  Fitfinity only seeks to provide a platform wherein the Service
                   User and Service Professional can be brought together and
-                  Bowoot itself has not role in the execution or provision of
+                  Fitfinity itself has not role in the execution or provision of
                   Services.
                 </div>
                 <div className="feedback">
@@ -929,8 +929,8 @@ class TermsConditions extends React.Component {
                   created as a result of the Terms of Use oryour use of any part
                   of the Website, including without limitation, the Negotiation
                   Worksheet or Agreement for Service. You do not have any
-                  authority whatsoever to bind Bowoot in any respect.All Service
-                  Professionals are independent contractors. Neither Bowoot nor
+                  authority whatsoever to bind Fitfinity in any respect.All Service
+                  Professionals are independent contractors. Neither Fitfinity nor
                   any users of the Website may direct or control the day-to-day
                   activities of the other, or create or assume any obligation on
                   behalf of the other.
@@ -952,24 +952,24 @@ class TermsConditions extends React.Component {
                   inquiries you deem necessary or appropriate before proceeding
                   with any online or offline transaction with any third party,
                   including without limitation, service professionals and
-                  Service Users, keep in mind the fact that Bowoot only seeks to
+                  Service Users, keep in mind the fact that Fitfinity only seeks to
                   provide a platform wherein Service Users and Service
                   Professionals have an opportunity to meet each other.
                 </div>
                 <div className="feedback">
-                  NOTWITHSTANDING THE FOREGOING, YOU AGREE THAT SINCE BOWOOT
+                  NOTWITHSTANDING THE FOREGOING, YOU AGREE THAT SINCE Fitfinity
                   only seeks to provide a platform wherein the Service User and
-                  Service Professional can be brought together and Bowoot itself
+                  Service Professional can be brought together and Fitfinity itself
                   has not role in the execution or provision of Services ITSELF,
-                  BOWOOT SHALL NOT BE RESPONSIBLE OR LIABLE FOR ANY LOSS OR
+                  Fitfinity SHALL NOT BE RESPONSIBLE OR LIABLE FOR ANY LOSS OR
                   DAMAGE OFANY SORT WHATSOEVER INCURRED AS THE RESULT OF ANY
                   SUCH TRANSACTIONOR DEALINGS. IF THERE IS A DISPUTE BETWEEN
                   PARTICIPANTS ON THE WEBSITE, OR BETWEEN REGISTERED USERS OR
                   ANY WEBSITE USER AND ANY THIRD PARTY,YOU ACKNOWLEDGE AND AGREE
-                  THAT BOWOOT IS UNDER NO OBLIGATION TO BECOME INVOLVED. IN THE
+                  THAT Fitfinity IS UNDER NO OBLIGATION TO BECOME INVOLVED. IN THE
                   EVENT THAT A DISPUTE ARISES BETWEEN YOU AND ONE OR MORE
                   WEBSITE USERS, REGISTERED USERS OR ANY THIRD PARTY, YOU HEREBY
-                  RELEASE BOWOOT, ITS OFFICERS, MANAGERS, MEMBERS, DIRECTORS,
+                  RELEASE Fitfinity, ITS OFFICERS, MANAGERS, MEMBERS, DIRECTORS,
                   EMPLOYEES, ATTORNEYS, AGENTS, AND SUCCESSORS IN RIGHTS FROM
                   ANY CLAIMS, DEMANDS, AND DAMAGES (ACTUAL AND CONSEQUENTIAL) OF
                   EVERY KIND OR NATURE, KNOWN OR UNKNOWN, SUSPECTED OR
@@ -984,14 +984,14 @@ class TermsConditions extends React.Component {
                   </strong>
                 </div>
                 <div className="feedback">
-                  If a dispute arises between you and Bowoot, our goal is to
+                  If a dispute arises between you and Fitfinity, our goal is to
                   provide you with a neutral and cost effective means of
-                  resolving the dispute quickly. Accordingly, you and Bowoot
+                  resolving the dispute quickly. Accordingly, you and Fitfinity
                   hereby agree thatwe will resolve any claim or controversy at
                   law and equity that arises out of the Terms of Use or the
                   Website, Before resorting to the filing of a formal lawsuit,
                   we strongly encourage you to first contact us directly to seek
-                  a resolution via e-mail at support@Bowoot.com. The dispute
+                  a resolution via e-mail at support@Fitfinity.com. The dispute
                   shall be resolved through alternative dispute resolution
                   procedures, such as mediation or arbitration, as alternatives
                   to litigation.
@@ -1003,8 +1003,8 @@ class TermsConditions extends React.Component {
                   Bangalore, India.
                 </div>
                 <div className="feedback">
-                  Aspects of the Website and other Bowoot services may be
-                  supported by advertising revenue. As such, Bowoot may display
+                  Aspects of the Website and other Fitfinity services may be
+                  supported by advertising revenue. As such, Fitfinity may display
                   advertisements and promotions on the service.
                 </div>
                 <div className="feedback">
@@ -1015,7 +1015,7 @@ class TermsConditions extends React.Component {
                   log into the Website using your existing account and log-in
                   credentials for such third-party websites. Your dealings and
                   communications through the Website with any party other than
-                  Bowoot are solely between you and such third party. Any
+                  Fitfinity are solely between you and such third party. Any
                   complaints, concerns or questions you have relating to
                   materials provided by third parties should be forwarded
                   directly to the applicable third party.
@@ -1024,7 +1024,7 @@ class TermsConditions extends React.Component {
                   <strong>Limitations of Liability</strong>
                 </div>
                 <div className="feedback">
-                  1. IN NO EVENT SHALL BOWOOT, OR ITS RESPECTIVE OFFICERS,
+                  1. IN NO EVENT SHALL Fitfinity, OR ITS RESPECTIVE OFFICERS,
                   MANAGERS, MEMBERS, DIRECTORS, EMPLOYEES, SUCCESSORS, ASSIGNS,
                   SUBSIDIARIES, AFFILIATES, SERVICE PROFESSIONALS, SUPPLIERS,
                   ATTORNEYS OR AGENTS, BE LIABLE TO YOU FOR ANY DIRECT,
@@ -1057,34 +1057,34 @@ class TermsConditions extends React.Component {
                   POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE ON
                   OR THROUGH THE WEBSITE, WHETHER BASED ON WARRANTY, CONTRACT,
                   TORT (INCLUDING NEGLIGENCE), OR ANY OTHER LEGAL THEORY, AND
-                  WHETHER OR NOT BOWOOT IS ADVISED OF THE POSSIBILITY OF SUCH
+                  WHETHER OR NOT Fitfinity IS ADVISED OF THE POSSIBILITY OF SUCH
                   DAMAGES. THE FOREGOING LIMITATION OF LIABILITY SHALL APPLY TO
                   THE FULLEST EXTENT PERMITTED BY LAW IN THE APPLICABLE
                   JURISDICTION.
                 </div>
                 <div className="feedback">
-                  2. IN NO EVENT SHALL THE TOTAL, AGGREGATE LIABILITY OF BOWOOT,
+                  2. IN NO EVENT SHALL THE TOTAL, AGGREGATE LIABILITY OF Fitfinity,
                   OR ANY OF THE ABOVE-REFERENCED RESPECTIVE PARTIES, ARISING
                   FROM OR RELATING TO THE WEBSITE, AND/OR SUBMITTED CONTENT
-                  EXCEED THE TOTAL AMOUNT OF FEES ACTUALLY PAID TO BOWOOT BY YOU
-                  HEREUNDER.YOU HEREBY ACKNOWLEDGE AND AGREE THAT BOWOOT SHALL
+                  EXCEED THE TOTAL AMOUNT OF FEES ACTUALLY PAID TO Fitfinity BY YOU
+                  HEREUNDER.YOU HEREBY ACKNOWLEDGE AND AGREE THAT Fitfinity SHALL
                   NOT BE LIABLE FOR SUBMITTED CONTENT OR THE DEFAMATORY,
                   OFFENSIVE, OR ILLEGAL CONDUCT OF ANY THIRD PARTY OR SERVICE
                   USER OR SERVICE PROVIDER AND THAT THE RISK OF HARM OR DAMAGE
                   FROM THE FOREGOING RESTS ENTIRELY WITH YOU. YOU FURTHER
-                  ACKNOWLEDGE AND AGREE THAT BOWOOT SHALL NOT BE LIABLE FOR ANY
+                  ACKNOWLEDGE AND AGREE THAT Fitfinity SHALL NOT BE LIABLE FOR ANY
                   DIRECT, INDIRECT, INCIDENTAL, SPECIAL, PUNITIVE, CONSEQUENTIAL
                   OR EXEMPLARY DAMAGES (INCLUDING BUT NOT LIMITED TO LOSS OF
                   BUSINESS, REVENUE, PROFITS, USE, DATA OR OTHER ECONOMIC
                   ADVANTAGE) WHATSOEVER RESULTING FROM OR RELATING TO ANY
                   CONTRACT BETWEEN WEBSITE USERS ENTERED INTO INDEPENDENTLY OF
                   THE WEBSITE.THE WEBSITE MAY CONTAIN LINKS TO THIRD-PARTY
-                  WEBSITES THAT ARE NOT OWNED OR CONTROLLED BY BOWOOT. BOWOOT
+                  WEBSITES THAT ARE NOT OWNED OR CONTROLLED BY Fitfinity. Fitfinity
                   DOES NOT HAVE ANY CONTROL OVER, AND ASSUMES NO RESPONSIBILITY
                   FOR, THE CONTENT, PRIVACY POLICIES, OR PRACTICES OF ANY
-                  THIRD-PARTY WEBSITES. IN ADDITION, BOWOOT WILL NOT AND CANNOT
+                  THIRD-PARTY WEBSITES. IN ADDITION, Fitfinity WILL NOT AND CANNOT
                   CENSOR OR EDIT THE CONTENT OF ANY THIRD-PARTY SITE. BY USING
-                  THE WEBSITE, YOU EXPRESSLY RELIEVE BOWOOT FROM ANY AND ALL
+                  THE WEBSITE, YOU EXPRESSLY RELIEVE Fitfinity FROM ANY AND ALL
                   LIABILITY ARISING FROM YOUR USE OF ANY THIRDPARTY WEBSITE.
                   ACCORDINGLY, PLEASE BE ADVISED TO READ THE TERMS AND
                   CONDITIONS AND PRIVACY POLICY OF EACH THIRD-PARTY WEBSITE THAT
@@ -1096,7 +1096,7 @@ class TermsConditions extends React.Component {
                 </div>
                 <div className="feedback">
                   YOU AGREE THAT YOUR USE OF THE WEBSITE SHALL BE AT YOUR OWN
-                  RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, AND BOWOOT AND
+                  RISK. TO THE FULLEST EXTENT PERMITTED BY LAW, AND Fitfinity AND
                   ITS OFFICERS, MANAGERS, MEMBERS, DIRECTORS, EMPLOYEES,
                   SUCCESSORS, ASSIGNS, SUBSIDIARIES, AFFILIATES, SERVICE
                   PROFESSIONALS, SUPPLIERS, AND AGENTS DISCLAIM ALL WARRANTIES,
@@ -1115,7 +1115,7 @@ class TermsConditions extends React.Component {
                   PRESENTED ON THIS WEBSITE IS PROVIDED TO YOU ON AN "AS IS,"
                   "AS AVAILABLE" AND "WHEREIS" BASIS WITH NO WARRANTY OF IMPLIED
                   WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
-                  OR NON-INFRINGEMENT OF THIRD-PARTY RIGHTS. BOWOOT DOES NOT
+                  OR NON-INFRINGEMENT OF THIRD-PARTY RIGHTS. Fitfinity DOES NOT
                   PROVIDE ANY WARRANTIES AGAINST ERRORS, MISTAKES, OR
                   INACCURACIES OF DATA, CONTENT, INFORMATION, MATERIALS,
                   SUBSTANCE OF THE WEBSITE OR SUBMITTED CONTENT, ANY
@@ -1130,11 +1130,11 @@ class TermsConditions extends React.Component {
                   RESULT OF THE USE OF ANY DATA, CONTENT, INFORMATION,
                   MATERIALS, SUBSTANCE OF THE WEBSITE OR SUBMITTED CONTENT
                   POSTED, EMAILED, TRANSMITTED, OR OTHERWISE MADE AVAILABLE VIA
-                  THE WEBSITE. BOWOOT DOES NOT ENDORSE, WARRANT, GUARANTEE, OR
+                  THE WEBSITE. Fitfinity DOES NOT ENDORSE, WARRANT, GUARANTEE, OR
                   ASSUME RESPONSIBILITY FOR ANY PRODUCT OR SERVICE ADVERTISED OR
                   OFFERED BY A THIRD PARTY THROUGH THE WEBSITE OR ANY
                   HYPERLINKED SITE OR FEATURED IN ANY BANNER OR OTHER
-                  ADVERTISEMENT. BOWOOT WILL NOT BE A PARTY TO OR IN ANY WAY BE
+                  ADVERTISEMENT. Fitfinity WILL NOT BE A PARTY TO OR IN ANY WAY BE
                   RESPONSIBLE FOR MONITORING ANY TRANSACTION BETWEEN YOU AND ANY
                   PARTY, INCLUDING THIRD PARTY SERVICE PROFESSIONALS OF PRODUCTS
                   OR SERVICES. AS WITH THE USE OF ANY PRODUCT OR SERVICE, AND
@@ -1146,7 +1146,7 @@ class TermsConditions extends React.Component {
                   <strong>In case of Natural disasters</strong>
                 </div>
                 <div className="feedback">
-                  Neither Bowoot nor you shall be liable to the other for any
+                  Neither Fitfinity nor you shall be liable to the other for any
                   delay or failure in performance under the Terms of Use, other
                   than payment obligations, arising out of a cause beyond its
                   control and without its fault or negligence. Such causes may
@@ -1159,7 +1159,7 @@ class TermsConditions extends React.Component {
                   <strong>Indemnification and Release </strong>
                 </div>
                 <div className="feedback">
-                  YOU AGREE TO DEFEND, INDEMNIFY AND HOLD HARMLESS BOWOOT, AND
+                  YOU AGREE TO DEFEND, INDEMNIFY AND HOLD HARMLESS Fitfinity, AND
                   ITS OFFICERS, MANAGERS, MEMBERS, DIRECTORS, EMPLOYEES,
                   SUCCESSORS, ASSIGNS, SUBSIDIARIES, AFFILIATES, SERVICE
                   PROFESSIONALS, SUPPLIERS, AND AGENTS, FROM AND AGAINST ANY AND
@@ -1174,7 +1174,7 @@ class TermsConditions extends React.Component {
                   TO A THIRD PARTY. THIS DEFENSE AND INDEMNIFICATION OBLIGATION
                   WILL SURVIVE THESE TERMSOF SERVICE AND YOUR USE OF THE
                   WEBSITE.IF YOU HAVE A DISPUTE WITH ONE OR MORE WEBSITE USERS,
-                  YOU FOREVER RELEASE BOWOOT (AND ITS OFFICERS, MANAGERS,
+                  YOU FOREVER RELEASE Fitfinity (AND ITS OFFICERS, MANAGERS,
                   MEMBERS, DIRECTORS, EMPLOYEES, SUCCESSORS, ASSIGNS,
                   SUBSIDIARIES, AFFILIATES, SERVICE PROFESSIONALS, SUPPLIERS,
                   AGENTS, SUBSIDIARIES, AND EMPLOYEES) FROM ANY AND ALL CLAIMS,
@@ -1183,7 +1183,7 @@ class TermsConditions extends React.Component {
                   CONNECTED WITH YOUR USE OF THE WEBSITE AND/OR ANY SUBMITTED
                   CONTENT.THE TERMS OF USE, AND ANY RIGHTS AND LICENSES GRANTED
                   HEREUNDER, MAY NOT BE TRANSFERRED OR ASSIGNED BY YOU, BUT MAY
-                  BE ASSIGNED BY BOWOOT WITHOUT RESTRICTION.
+                  BE ASSIGNED BY Fitfinity WITHOUT RESTRICTION.
                 </div>
                 <div className="feedback">
                   <strong>
@@ -1205,13 +1205,13 @@ class TermsConditions extends React.Component {
                   </strong>
                 </div>
                 <div className="feedback">
-                  You agree that Bowoot may provide you with notices, including
+                  You agree that Fitfinity may provide you with notices, including
                   those regarding changes to the Terms of Use, by email, regular
                   mail, or postings on the Website.
                 </div>
                 <div>
                   <strong>
-                    Bowoot India Technology Private Limited. All Rights Reserved
+                    Fitfinity India Technology Private Limited. All Rights Reserved
                   </strong>
                 </div>
               </div>

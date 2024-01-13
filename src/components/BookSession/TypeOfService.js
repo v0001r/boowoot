@@ -26,6 +26,7 @@ export class TypeOfService extends Component {
   handleSubmit = e => {
     e.preventDefault();
     let self = this.state;
+
     if (this.state.typeOfservice !== undefined) {
       this.props.nextStep();
     } else {

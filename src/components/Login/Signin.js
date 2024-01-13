@@ -52,6 +52,10 @@ class Signin extends Component {
         pathname: "/admin/adminDashboard",
         params: { username: "Admin" }
       });
+    }else if(user &&  user_type == "U"){
+      this.props.history.push({
+        pathname: "user/userDashboard",
+      });
     }
    
   }
@@ -100,6 +104,9 @@ postDatatrail(user) {
   localStorage.setItem("token", user.token);
   localStorage.setItem("user_id", user.userId);
   localStorage.setItem("user_type", user.user_type);
+  localStorage.setItem("name", user.name);
+  localStorage.setItem("mobile", user.mobile);
+  localStorage.setItem("email", user.email);
 
   this.props.UserDetail(user);
 
@@ -107,6 +114,11 @@ postDatatrail(user) {
                   this.props.history.push({
                     pathname: "/admin/adminDashboard",
                     params: { username: "Admin" }
+                  });
+                }else if(user.user_type == "U"){
+                  this.props.history.push({
+                    pathname: "user/userDashboard",
+                    params: { username: user.name }
                   });
                 }else {
                   this.props.history.goBack();

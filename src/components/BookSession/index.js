@@ -49,6 +49,11 @@ class BookSession extends React.Component {
     });
   };
   componentDidMount() {
+    const user = localStorage.getItem('token');
+
+    if(!user){
+      this.props.history.replace("/login");
+    }
     if (this.props.service) {
       this.setState({
         step: 1

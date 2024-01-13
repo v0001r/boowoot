@@ -60,7 +60,7 @@ class TrainerExperience extends React.Component {
       });
       
       // console.log(add);
-      this.postData('http://localhost:5011/v1/trainers', add)
+      this.postData('http://api.bowoot.com/v1/trainers', add)
         .then(user => {
           if (user.statusCode != 400) {
             // Object.keys(this.props.trainer.documents).map(k => {

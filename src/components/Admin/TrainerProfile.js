@@ -18,7 +18,7 @@ class TrainerProfile extends React.Component{
       }
 
     componentDidMount(){
-        fetch("http://localhost:5011/v1/trainers/"+this.props.tid, {
+        fetch("http://fitfinitytrainer.com/api/v1/trainers/"+this.props.tid, {
           method: "GET", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -42,7 +42,7 @@ class TrainerProfile extends React.Component{
         const data = {
             id: this.props.tid
         }
-        fetch("http://localhost:5011/v1/trainers/block/", {
+        fetch("http://fitfinitytrainer.com/api/v1/trainers/block/", {
           method: "post", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -76,7 +76,7 @@ class TrainerProfile extends React.Component{
         const data = {
             id: this.props.tid
         }
-        fetch("http://localhost:5011/v1/trainers/unblock/", {
+        fetch("http://fitfinitytrainer.com/api/v1/trainers/unblock/", {
           method: "post", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -110,7 +110,7 @@ class TrainerProfile extends React.Component{
         const data = {
             id: this.props.tid
         }
-        fetch("http://localhost:5011/v1/trainers/reject/", {
+        fetch("http://fitfinitytrainer.com/api/v1/trainers/reject/", {
           method: "post", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -144,7 +144,7 @@ class TrainerProfile extends React.Component{
         const data = {
             id: this.props.tid
         }
-        fetch("http://localhost:5011/v1/trainers/approve/", {
+        fetch("http://fitfinitytrainer.com/api/v1/trainers/approve/", {
           method: "post", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit

@@ -72,7 +72,7 @@ class Signin extends Component {
     "password": self.state.password
     }
     return new Promise(function(resolve, reject) {
-      fetch('http://localhost:5011/v1/auth/login', {
+      fetch('http://fitfinitytrainer.com/api/v1/auth/login', {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
         credentials: "same-origin", // include, *same-origin, omit

@@ -32,7 +32,7 @@ class NatalForm extends React.Component {
       let add = this.state;
       let self = this;
       return new Promise(function(resolve, reject) {
-        fetch('http://localhost:5011/v1/neo-enquiry', {
+        fetch('http://fitfinitytrainer.com/api/v1/neo-enquiry', {
           method: "POST", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit

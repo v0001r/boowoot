@@ -49,6 +49,7 @@ export const ADD_BANK_DETAILS = "ADD_BANK_DETAILS";
 export const ADD_TICKET_RAISE = "ADD_TICKET_RAISE";
 export const TRIAL_DATE = "TRIAL_DATE";
 export const USER_CATEGORY = "USER_CATEGORY";
+export const USER_BOOKING = "USER_BOOKING";
 export const Form_Close = "Form_Close";
 
 export const TRAINER_TYPE = "TRAINER_TYPE";

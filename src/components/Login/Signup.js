@@ -16,12 +16,11 @@ class Signup extends Component {
     super(props);
     this.state = {
       name: "",
-      gender: "",
-      phoneNumber: "+91",
+      mobile: "",
       email: "",
       password: ""
     };
-    this.postDatatrail = this.postDatatrail.bind(this);
+    // this.postDatatrail = this.postDatatrail.bind(this);
   }
   handleInputChange = e => {
     this.setState({
@@ -34,8 +33,7 @@ class Signup extends Component {
       self = this;
     if (
       this.state.name.trim() &&
-      this.state.gender.trim() &&
-      this.state.phoneNumber.trim() &&
+      this.state.mobile.trim() &&
       this.state.email.trim() &&
       this.state.password
     ) {
@@ -48,26 +46,30 @@ class Signup extends Component {
   postDatatrail() {
     let add = this.state,
       self = this;
-    add.token = "isUser";
-    this.postData(functions_for_users.creatNewUser, add)
-      .then(data => {
-        if (data.uid) {
-          delete add.password;
-          delete add.token;
-          var ref = firebase
-            .database()
-            .ref("/users/" + data.uid)
-            .child("profile");
-          ref.set(add);
-          self.props.history.replace("/user/userDashboard");
-          self.handleReset();
-        } else {
-          toast(data.error.message, toastConfig);
-        }
-      })
-      .catch(error => {
-        toast(error.message, toastConfig);
-      });
+    add.user_type = "U";
+
+    return new Promise(function(resolve, reject) {
+      fetch('http://localhost:5011/v1/auth/register', {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: "same-origin", // include, *same-origin, omit
+        headers: {
+          
+          "Content-Type": 'application/json',
+          "Access-Control-Allow-Origin": "*",
+          "Accept-Encoding": "gzip"
+        },
+        body: JSON.stringify(add) // body data type must match "Content-Type" header
+      }).then((response) => response.json())
+      .then((responseData) => {
+        let user = responseData;    
+        toast("Registered Successfully", toastConfig);
+    
+      }).catch(err => {
+          toast(err.message, toastConfig);
+          reject(err);
+        }); // parses response to JSON
+    });
   }
 
   postData(url = ``, data) {
@@ -127,50 +129,14 @@ class Signup extends Component {
                 </div>
                 <div className="input">
                   <div className="form-group">
-                    <div className="container-row">
-                      <div className="book_session_radio">
-                        <input
-                          id="radio-1"
-                          name="gender"
-                          type="radio"
-                          value="Male"
-                          checked={this.state.gender === "Male"}
-                          onChange={this.handleInputChange}
-                          validators={["required", "isEmail"]}
-                          errorMessages={["Valid Email is required"]}
-                        />
-                        <label for="radio-1" className="book_radio">
-                          Male
-                        </label>
-                      </div>
-                      <div className="book_session_radio">
-                        <input
-                          id="radio-2"
-                          name="gender"
-                          type="radio"
-                          value="Female"
-                          checked={this.state.gender === "Female"}
-                          onChange={this.handleInputChange}
-                          validators={["required", "isEmail"]}
-                          errorMessages={["Valid Email is required"]}
-                        />
-                        <label for="radio-2" className="book_radio">
-                          Female
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="input">
-                  <div className="form-group">
                     <TextValidator
                       label="Phone Number *"
                       type="text"
                       placeholder="Phone Number"
                       className="form-control"
-                      name="phoneNumber"
+                      name="mobile"
                       onChange={this.handleInputChange}
-                      value={this.state.phoneNumber}
+                      value={this.state.mobile}
                       validators={["required"]}
                       errorMessages={[
                         "Please enter a valid phone number along with code"

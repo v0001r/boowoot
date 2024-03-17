@@ -63,48 +63,19 @@ class TrainerRegistration extends React.Component {
             </h5>
           </div>
           <ProgressBar
-            now={(this.props.page * 100) / 6}
+            now={(this.props.page * 100) / 1}
             className="progressStyle"
           />
           <div className=" trainer_box_mq col-sm-12 col-md-12 col-lg-12 col-xl-12">
             <br />
             {page === 0 && <Typeoftrainer onSubmit={this.nextPage} />}
             {page === 1 && (
-              <TrainerBasicDetails
-                onSubmit={this.nextPage}
-                previousPage={this.previousPage}
-              />
+               <Success 
+               previousPage={this.previousPage}
+               onSubmit={this.nextPage}
+               />
             )}
-            {page === 2 && (
-              <TrainerDetails
-                previousPage={this.previousPage}
-                onSubmit={this.nextPage}
-              />
-            )}
-            {page === 3 && (
-              <TrainerDocuments
-                previousPage={this.previousPage}
-                onSubmit={this.nextPage}
-              />
-            )}
-            {page === 4 && (
-              <TrainerBankDetails
-                previousPage={this.previousPage}
-                onSubmit={this.nextPage}
-              />
-            )}
-            {page === 5 && (
-              <TrainerExperience
-                previousPage={this.previousPage}
-                onSubmit={this.nextPage}
-              />
-            )}
-            {(page === 9 || page === 8 || page === 7 || page === 6) && (
-              <Success 
-              previousPage={this.previousPage}
-              onSubmit={this.nextPage}
-              />
-            )}
+            
           </div>
         </div>
       </div>

@@ -17,6 +17,8 @@ import Payment from "../Payment";
 import { firebase } from "../../firebase";
 import "../../../css/fitnesstraining.css";
 import Header from "../../Header";
+import { ToastContainer, toast, Flip } from "react-toastify";
+import { toastConfig } from "../../Custom/ToastConfig";
 import PackageDetails from "./PackageDetails";
 import CustomSpinner from "../../Custom/spinner";
 import Acknowledgement from "./Acknowledgement";
@@ -77,26 +79,46 @@ class FitnessDietPlan extends Component {
     });
   }
 
+ 
+
   transactionstart() {
     this.setState({
       loading: true
     });
     let fitness = {};
+    let self = this;
 
     fitness = Object.assign(this.props.User);
 
-    var user = firebase.auth().currentUser;
-    var ref = firebase
-      .database()
-      .ref("users")
-      .child(user.uid)
-      .child("dietPlan")
-      .child(this.props.User.TransactionID);
-    ref.set(fitness).then(() => {
-      this.setState({
-        loading: false,
-        acknowledgementform: true
-      });
+
+    return new Promise(function(resolve, reject) {
+      fetch('http://localhost:5011/v1/fitness-plans', {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: "same-origin", // include, *same-origin, omit
+        headers: {
+          
+          "Content-Type": 'application/json',
+          "Access-Control-Allow-Origin": "*",
+          "Accept-Encoding": "gzip"
+        },
+        body: JSON.stringify(fitness) // body data type must match "Content-Type" header
+      }).then((response) => { 
+        console.log(response)
+        if(response.ok){
+         self.success();
+        }
+      })
+      .catch(err => {
+          toast(err.message, toastConfig);
+          reject(err);
+        }); // parses response to JSON
+    });
+  }
+  success(){
+    this.setState({
+      loading: false,
+      acknowledgementform: true
     });
   }
   render() {
@@ -280,6 +302,8 @@ class FitnessDietPlan extends Component {
             hideFailure={() => this.closeFailureTransaction()}
           />
         </Modal>
+        <ToastContainer transition={Flip} />
+
       </div>
     );
   }

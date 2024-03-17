@@ -14,6 +14,9 @@ class Acknowledgement extends React.Component {
   finistDietProcess() {
     this.props.clearDietPlan();
     this.props.closeParentAck();
+    this.props.history.push({
+      pathname: "/",
+    });
   }
 
   render() {

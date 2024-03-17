@@ -10,10 +10,11 @@ import { toastConfig } from "../Custom/ToastConfig";
 
 class Corporateplan extends React.Component {
   state = {
-    Name: "",
+    name: "",
     company: "",
     requirement: "",
-    email: ""
+    email: "",
+    phone: ""
   };
 
   handleInputChange = e => {
@@ -24,31 +25,54 @@ class Corporateplan extends React.Component {
 
   handleClick = e => {
     if (
-      this.state.Name.trim() &&
+      this.state.name.trim() &&
       this.state.company.trim() &&
       this.state.requirement.trim() &&
+      this.state.phone.trim() &&
       this.state.email.trim()
     ) {
-      var ref = firebase.database().ref("corporateplan");
-      ref.push(this.state);
-      if (ref) {
-        toast(
-          "Your Information in received we will contact you soon!!",
-          toastConfig
-        );
-        setInterval(() => {
-          this.props.onHide();
-        }, 3000);
-      }
+
+      let add = this.state;
+      let self = this;
+      return new Promise(function(resolve, reject) {
+        fetch('http://localhost:5011/v1/corporate-enquiry', {
+          method: "POST", // *GET, POST, PUT, DELETE, etc.
+          cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: "same-origin", // include, *same-origin, omit
+          headers: {
+            
+            "Content-Type": 'application/json',
+            "Access-Control-Allow-Origin": "*",
+            "Accept-Encoding": "gzip"
+          },
+          body: JSON.stringify(add) // body data type must match "Content-Type" header
+        }).then((response) => { 
+          console.log(response)
+          if(response.ok){
+            toast(
+              "Your Information in received we will contact you soon!!",
+              toastConfig
+            );
+            self.handleReset();
+
+          }
+        })
+        .catch(err => {
+            toast(err.message, toastConfig);
+            reject(err);
+          }); // parses response to JSON
+      });
+      
     }
   };
 
   handleReset = () => {
     this.setState({
-      Name: "",
+      name: "",
       company: "",
       requirement: "",
-      email: ""
+      email: "",
+      phone: ""
     });
   };
 
@@ -67,9 +91,9 @@ class Corporateplan extends React.Component {
                 type="text"
                 placeholder="Enter Your Name"
                 className="form-control"
-                name="Name"
+                name="name"
                 onChange={this.handleInputChange}
-                value={this.state.Name}
+                value={this.state.name}
                 validators={["required"]}
                 errorMessages={["Name is required"]}
               />
@@ -99,6 +123,19 @@ class Corporateplan extends React.Component {
                 value={this.state.email}
                 validators={["required", "isEmail"]}
                 errorMessages={["Kindly enter valid email-id"]}
+              />
+            </div>
+            <div className="inputfieldsize">
+              <TextValidator
+                type="text"
+                label="Phone *"
+                placeholder="Enter Phone No."
+                className="form-control"
+                name="phone"
+                onChange={this.handleInputChange}
+                value={this.state.phone}
+                validators={["required"]}
+                errorMessages={["Kindly enter Phone No."]}
               />
             </div>
             <div className="inputfieldsize">

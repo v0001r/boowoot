@@ -12,12 +12,13 @@ class TrainerProfile extends React.Component{
           result:[],
           result2:[],
           status: "",
-          block: ""
+          block: "",
+          kyc: ""
         }
       }
 
     componentDidMount(){
-        fetch("http://fitfinitytrainer.com/api/v1/trainers/"+this.props.tid, {
+        fetch("http://localhost:5011/v1/trainers/"+this.props.tid, {
           method: "GET", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -29,6 +30,7 @@ class TrainerProfile extends React.Component{
           .then(response => response.json()).then((responseData) => {
             this.setState({result:responseData})
             this.setState({status:responseData._doc.status})
+            this.setState({kyc:responseData._doc.kyc})
             this.setState({block:responseData._doc.block_status})
           })
           .catch(err => {
@@ -40,7 +42,7 @@ class TrainerProfile extends React.Component{
         const data = {
             id: this.props.tid
         }
-        fetch("http://fitfinitytrainer.com/api/v1/trainers/block/", {
+        fetch("http://localhost:5011/v1/trainers/block/", {
           method: "post", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -74,7 +76,7 @@ class TrainerProfile extends React.Component{
         const data = {
             id: this.props.tid
         }
-        fetch("http://fitfinitytrainer.com/api/v1/trainers/unblock/", {
+        fetch("http://localhost:5011/v1/trainers/unblock/", {
           method: "post", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -108,7 +110,7 @@ class TrainerProfile extends React.Component{
         const data = {
             id: this.props.tid
         }
-        fetch("http://fitfinitytrainer.com/api/v1/trainers/reject/", {
+        fetch("http://localhost:5011/v1/trainers/reject/", {
           method: "post", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -142,7 +144,7 @@ class TrainerProfile extends React.Component{
         const data = {
             id: this.props.tid
         }
-        fetch("http://fitfinitytrainer.com/api/v1/trainers/approve/", {
+        fetch("http://localhost:5011/v1/trainers/approve/", {
           method: "post", // *GET, POST, PUT, DELETE, etc.
           cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
           credentials: "same-origin", // include, *same-origin, omit
@@ -203,7 +205,16 @@ class TrainerProfile extends React.Component{
                                         <span className="pd">{this.state.result._doc?this.state.result._doc.phone:"-"}</span><br/>
                                         <span className="pd">{this.props.tid?this.props.tid:"-"}</span>
                                         <span className="pd">{this.state.status?this.state.status:"-"}</span>
+                                        <div className="row">
+                                        <div className="col">
+                                            {(this.state.kyc === "1") ?
+                                            <button className="btn btn-danger btn-class"><b>KYC NOT DONE</b></button>
+                                            :
+                                            <button className="btn btn-success btn-class"><b>KYC DONE</b></button>
 
+                                            }                                   
+                                        </div>
+                                        </div>
                                     </div>
 
                                     
@@ -225,6 +236,7 @@ class TrainerProfile extends React.Component{
                                 </div>
                             </div>
                             <div>
+                                
                                 <div className="row">
                                     <div className="col">
                                         {(this.state.status === "A") ?
@@ -235,7 +247,7 @@ class TrainerProfile extends React.Component{
                                         }                                   
                                     </div>
                                     <div className="col">
-                                        {(this.state.status === "P") ?
+                                        {(this.state.status === "P" && this.state.kyc === "2") ?
                                         <button className="btn btn-warning btn-class" onClick={this.handleApprove}><b>Approve</b></button>
                                         :null
                                             
@@ -261,6 +273,13 @@ class TrainerProfile extends React.Component{
                                 {this.state.result._doc?this.state.result._doc.branch_name:"-"}<br/>
                                 {this.state.result._doc?this.state.result._doc.bank_name:"-"}
                             </div>
+                            <div className="col-sm-3 tdata">
+                                <span style={{fontWeight:"600"}}>Submitted Documents</span><br/>
+                              Aadhar: <a href={this.state.result._doc?this.state.result._doc.adhhar:'#'} target="_blank">View</a><br/>
+                              Pan: <a href={this.state.result._doc?this.state.result._doc.pan:'#'} target="_blank">View</a><br/>
+                              Certificate:  <a href={this.state.result._doc?this.state.result._doc.certificate:'#'} target="_blank">View</a><br/>
+                              Photo: <a href={this.state.result._doc?this.state.result._doc.photo:'#'} target="_blank">View</a>
+                            </div>
 
                             <div className="col-sm-3 tdata">
                                 <span style={{fontWeight:"600"}}>SERVICING AREA</span><br/>
@@ -273,11 +292,11 @@ class TrainerProfile extends React.Component{
                                 :null}<br/>
                             </div>
                             
-                            <div className="col-sm-2 tdata" style={{textAlign:"center"}}>
+                            {/* <div className="col-sm-2 tdata" style={{textAlign:"center"}}>
                                 <span style={{fontWeight:"600"}}>Credit Available</span><br/>
                                 <span style={{fontWeight:"bold",fontSize:"25px"}}>1234</span><br/>
                                 <button className="btn btn-warning btn-class"><b>Add Credit</b></button>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* <div style={{paddingTop:"30px"}}>

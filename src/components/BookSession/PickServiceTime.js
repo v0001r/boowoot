@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { ToastContainer, toast, Flip } from "react-toastify";
-import { createPickTrialDate } from "./../../actions/index";
+import { createPickTrialDate, createServiceDate, createUserCategory, userBooking } from "./../../actions/index";
 import "react-datepicker/dist/react-datepicker.css";
 import "react-toastify/dist/ReactToastify.css";
 import { ValidatorForm } from "react-material-ui-form-validator";
 import { toastConfig } from "../Custom/ToastConfig";
+import { TimePickJson } from "./TimePickJson";
+
 const FA = require("react-fontawesome");
 Date.prototype.addHours = function(h) {
   this.setHours(this.getHours() + h);
@@ -16,7 +18,12 @@ export class PickServiceTime extends Component {
     super(props);
     this.state = {
       typeOfservice: props.service.services ? props.service.services : null,
-      service_time: props.user.service_time
+      service_time: props.user.service_time,
+      trial_time: props.user.trial_time,
+      localtimestochild: props.time,
+      user_category: props.user.user_category,
+      trial_date: props.user.trial_date,
+      temp_date: props.user.trial_date
     };
   }
   back = e => {
@@ -27,10 +34,83 @@ export class PickServiceTime extends Component {
     e.preventDefault();
     let self = this.state;
     if (this.state.service_time !== undefined) {
-      this.props.onAddPost(self.service_time, this.props.service.services);
+      this.props.onAddPost(self.service_time, this.props.service.services, self.trial_date, self.user_category, self.trial_time);
       this.props.nextStep();
     } else {
       toast("Please input all the required data !!", toastConfig);
+    }
+  };
+  handleInputChangeTomo = e => {
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+    this.handleTomo();
+  };
+  handleTomo = () => {
+    var tempTmrDate = new Date(new Date().valueOf() + 1000 * 3600 * 24),
+      temp = [];
+    var nextdate =
+      tempTmrDate.getDate() +
+      "-" +
+      (tempTmrDate.getMonth() + 1) +
+      "-" +
+      tempTmrDate.getFullYear() +
+      " ";
+    const tomorow = nextdate;
+    var x = 60; //minutes interval
+    var tomotimes = []; // time array
+    var tt = 360; // start time
+    var ap = ["AM", "PM"]; // AM-PM
+    //loop to increment the time and push results in array
+    for (var i = 0; tt < 23 * 60; i++) {
+      var hh = Math.floor(tt / 60); // getting hours of day in 0-24 format
+      var mm = tt % 60; // getting minutes of the hour in 0-55 format
+      tomotimes[i] = ("0" + hh).slice(-2); // pushing data in array in [00:00 - 12:00 AM/PM format]
+      tt = tt + x;
+      temp[i] = tomotimes[i];
+      // this.props.callParentTomo(tomotimes[i]);
+    }
+    this.setState({
+      temp_date: temp
+    });
+  };
+  handletoday = () => {
+    var tempDate = new Date(),
+      temp = [];
+    var date =
+      tempDate.getDate() +
+      "-" +
+      (tempDate.getMonth() + 1) +
+      "-" +
+      tempDate.getFullYear() +
+      " ";
+    const today = date;
+    var todaytime = tempDate.getHours();
+    if (today) {
+      if (todaytime <= 12) {
+        todaytime = todaytime + 4;
+        var x = 60; //minutes interval
+        var times = []; // time array
+        var tt = 0; // start time
+        var ap = ["AM", "PM"]; // AM-PM
+
+        //loop to increment the time and push results in array
+        for (var i = 0; tt < 23 * 60; i++) {
+          var hh = Math.floor(tt / 60); // getting hours of day in 0-24 format
+          var mm = tt % 60; // getting minutes of the hour in 0-55 format
+          times[i] = ("0" + hh).slice(-2); // pushing data in array in [00:00 - 12:00 AM/PM format]
+          tt = tt + x;
+          if (times[i] > todaytime && times[i] < 22) {
+            temp[i] = times[i];
+            // this.props.callParent(times[i]);
+          }
+        }
+        this.setState({
+          temp_date: temp.filter(Boolean)
+        });
+      } else {
+        toast("No slots are their !!", toastConfig);
+      }
     }
   };
   handleInputChange = e => {
@@ -40,6 +120,59 @@ export class PickServiceTime extends Component {
   };
   render() {
     let temp = this.state.startDate;
+    var tempDate = new Date();
+    var date =
+      (tempDate.getMonth() + 1) +
+      "-" +
+      tempDate.getDate() +
+      "-" +
+      tempDate.getFullYear() +
+      " ";
+    var todaytime = tempDate.getHours();
+
+    const today = date;
+
+    var tempTmrDate = new Date(new Date().valueOf() + 1000 * 3600 * 24);
+    var nextdate =
+      (tempTmrDate.getMonth() + 1) +
+      "-" +
+      tempTmrDate.getDate() +
+      "-" +
+      tempTmrDate.getFullYear() +
+      " ";
+    const tomorow = nextdate;
+
+    var tempdayAter = new Date(new Date().valueOf() + 1000 * 3600 * 48);
+    var nextdayater = tempdayAter.getDay();
+    var weekday = new Array(7);
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+    weekday[0] = "Sunday";
+    var nextdayaterfirebase =
+      (tempdayAter.getMonth() + 1)+
+      "-" +
+      tempdayAter.getDate() +
+      "-" +
+      tempdayAter.getFullYear() +
+      " ";
+    const dayafterfire = nextdayaterfirebase;
+    const dayaftertmrw = weekday[nextdayater];
+
+    var tempdayAterTmr = new Date(new Date().valueOf() + 1000 * 3600 * 72);
+    var nextdayatertmr = tempdayAterTmr.getDay();
+    var nextdayaterTmrfirebase =
+     (tempdayAterTmr.getMonth() + 1) +
+      "-" +
+      tempdayAterTmr.getDate()+
+      "-" +
+      tempdayAterTmr.getFullYear() +
+      " ";
+    const dayaftertmrfire = nextdayaterTmrfirebase;
+    const dayaftertmrwDay = weekday[nextdayatertmr];
     return (
       <div>
         <ValidatorForm onSubmit={this.handleSubmit}>
@@ -48,216 +181,204 @@ export class PickServiceTime extends Component {
               <strong className="book_heading">
                 Generally At what time you want to be served?
               </strong>
-              <div class="book_service_time book_session_radio">
-                <div class="radio">
+
+              <select
+                    className="form-control dropdown "
+                    id="service_time"
+                    name="service_time"
+                    onChange={this.handleInputChange}
+                    value={this.state.service_time}
+                  >
+                    <option value="" selected="selected" disabled="disabled">
+                      -- select one --
+                    </option>
+
+                    <option value="6:00-7:00AM">6:00-7:00AM</option>
+                    <option value="7:00-8:00AM">7:00-8:00AM</option>
+                    <option value="8:00-9:00AM">8:00-9:00AM</option>
+                    <option value="9:00-10:00AM">9:00-10:00AM</option>
+                    <option value="10:00-11:00AM">10:00-11:00AM</option>
+                    <option value="11:00-12:00AM">11:00-12:00AM</option>
+                    <option value="12:00-01:00PM">12:00-01:00PM</option>
+                    <option value="01:00-02:00PM">01:00-02:00PM</option>
+                    <option value="02:00-03:00PM">02:00-03:00PM</option>
+                    <option value="03:00-04:00PM">03:00-04:00PM</option>
+                    <option value="05:00-06:00PM">05:00-06:00PM</option>
+                    <option value="06:00-07:00PM">06:00-07:00PM</option>
+                    <option value="07:00-08:00PM">07:00-08:00PM</option>
+                    <option value="08:00-09:00PM">08:00-09:00PM</option>
+                    <option value="9:00-10:00PM">9:00-10:00PM</option>
+                  </select>
+            </div>
+          </div>
+          <div>
+          <div className="input">
+            <div className="form-group">
+              <strong className="book_heading">Training Needed for</strong>
+              <div
+                class="container-row book_session_radio user_category_column"
+                style={{ flexWrap: "wrap" }}
+              >
+                <div class="radio ">
                   <input
                     id="radio-1"
-                    name="service_time"
+                    name="user_category"
                     type="radio"
-                    value="6:00-7:00AM"
-                    checked={this.state.service_time === "6:00-7:00AM"}
+                    value="Male"
+                    checked={this.state.user_category === "Male"}
                     onChange={this.handleInputChange}
+                    className={
+                      this.state.user_category === "Male" ? "Male" : null
+                    }
                   />
-                  <label for="radio-1" class="book_radio margin_radio">
-                    6:00-7:00AM
+                  <label for="radio-1" className="book_radio">
+                    Male
                   </label>
                 </div>
                 <div className="radio">
                   <input
                     id="radio-2"
-                    name="service_time"
+                    name="user_category"
                     type="radio"
-                    value="7:00-8:00AM"
-                    checked={this.state.service_time === "7:00-8:00AM"}
+                    value="Female"
+                    checked={this.state.user_category === "Female"}
                     onChange={this.handleInputChange}
                   />
-                  <label for="radio-2" class="book_radio margin_radio">
-                    7:00-8:00AM
+                  <label for="radio-2" className="book_radio">
+                    Female
                   </label>
                 </div>
                 <div className="radio">
                   <input
                     id="radio-3"
-                    name="service_time"
+                    name="user_category"
                     type="radio"
-                    value="8:00-9:00AM"
-                    checked={this.state.service_time === "8:00-9:00AM"}
+                    value="Couple"
+                    checked={this.state.user_category === "Couple"}
                     onChange={this.handleInputChange}
                   />
-                  <label for="radio-3" class="book_radio margin_radio">
-                    8:00-9:00AM
+                  <label for="radio-3" className="book_radio">
+                    Couple
                   </label>
                 </div>
                 <div className="radio">
                   <input
                     id="radio-4"
-                    name="service_time"
+                    name="user_category"
                     type="radio"
-                    value="9:00-10:00AM"
-                    checked={this.state.service_time === "9:00-10:00AM"}
+                    value="Group"
+                    checked={this.state.user_category === "Group"}
                     onChange={this.handleInputChange}
+                    validators={["required"]}
+                    errorMessages={["Service cannot be empty"]}
                   />
-                  <label for="radio-4" class="book_radio margin_radio">
-                    9:00-10:00AM
+                  <label for="radio-4" className="book_radio">
+                    Group
                   </label>
                 </div>
-                <div className="radio">
-                  <input
-                    id="radio-5"
-                    name="service_time"
-                    type="radio"
-                    value="10:00-11:00AM"
-                    checked={this.state.service_time === "10:00-11:00AM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-5" class="book_radio margin_radio">
-                    10:00-11:00AM
-                  </label>
-                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div className="input">
+            <div className="form-group">
+              <strong className="book_heading">Select Trial Date</strong>
+              <div
+                class="container-row book_session_radio user_category_column"
+                style={{ flexWrap: "wrap" }}
+              >
+                {todaytime >= 12 ? null : (
+                  <div className="radio ">
+                    <input
+                      id="radio-5"
+                      name="trial_date"
+                      type="radio"
+                      value={today}
+                      checked={this.state.trial_date === today}
+                      onChange={this.handleInputChangeToday}
+                    />
+                    <label for="radio-5" className="book_radio">
+                      Today
+                    </label>
+                  </div>
+                )}
                 <div className="radio">
                   <input
                     id="radio-6"
-                    name="service_time"
+                    name="trial_date"
                     type="radio"
-                    value="11:00AM-12:00PM"
-                    checked={this.state.service_time === "11:00AM-12:00PM"}
-                    onChange={this.handleInputChange}
+                    value={tomorow}
+                    checked={this.state.trial_date === tomorow}
+                    onChange={this.handleInputChangeTomo}
                   />
-                  <label for="radio-6" class="book_radio margin_radio">
-                    11:00AM-12:00PM
+                  <label for="radio-6" className="book_radio">
+                    Tomorrow
                   </label>
                 </div>
                 <div className="radio">
                   <input
                     id="radio-7"
-                    name="service_time"
+                    name="trial_date"
                     type="radio"
-                    value="12:00-1:00PM"
-                    checked={this.state.service_time === "12:00-1:00PM"}
-                    onChange={this.handleInputChange}
+                    value={dayafterfire}
+                    checked={this.state.trial_date === dayafterfire}
+                    onChange={this.handleInputChangeTomo}
                   />
-                  <label for="radio-7" class="book_radio margin_radio">
-                    12:00-1:00PM
+                  <label for="radio-7" className="book_radio">
+                    {dayaftertmrw}
                   </label>
                 </div>
-                <div className="radio">
-                  <input
-                    id="radio-8"
-                    name="service_time"
-                    type="radio"
-                    value="1:00-2:00PM"
-                    checked={this.state.service_time === "1:00-2:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-8" class="book_radio margin_radio">
-                    1:00-2:00PM
-                  </label>
-                </div>
-                <div className="radio">
-                  <input
-                    id="radio-9"
-                    name="service_time"
-                    type="radio"
-                    value="2:00-3:00PM"
-                    checked={this.state.service_time === "2:00-3:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-9" class="book_radio margin_radio">
-                    2:00-3:00PM
-                  </label>
-                </div>
-                <div className="radio">
-                  <input
-                    id="radio-10"
-                    name="service_time"
-                    type="radio"
-                    value="3:00-4:00PM"
-                    checked={this.state.service_time === "3:00-4:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-10" class="book_radio margin_radio">
-                    3:00-4:00PM
-                  </label>
-                </div>
-                <div className="radio">
-                  <input
-                    id="radio-11"
-                    name="service_time"
-                    type="radio"
-                    value="4:00-5:00PM"
-                    checked={this.state.service_time === "4:00-5:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-11" class="book_radio margin_radio">
-                    4:00-5:00PM
-                  </label>
-                </div>
-                <div className="radio">
-                  <input
-                    id="radio-12"
-                    name="service_time"
-                    type="radio"
-                    value="5:00-6:00PM"
-                    checked={this.state.service_time === "5:00-6:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-12" class="book_radio margin_radio">
-                    5:00-6:00PM
-                  </label>
-                </div>
-                <div className="radio">
-                  <input
-                    id="radio-13"
-                    name="service_time"
-                    type="radio"
-                    value="6:00-7:00PM"
-                    checked={this.state.service_time === "6:00-7:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-13" class="book_radio margin_radio">
-                    6:00-7:00PM
-                  </label>
-                </div>
-                <div className="radio">
-                  <input
-                    id="radio-14"
-                    name="service_time"
-                    type="radio"
-                    value="7:00-8:00PM"
-                    checked={this.state.service_time === "7:00-8:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-14" class="book_radio margin_radio">
-                    7:00-8:00PM
-                  </label>
-                </div>
-                <div className="radio">
-                  <input
-                    id="radio-15"
-                    name="service_time"
-                    type="radio"
-                    value="8:00-9:00PM"
-                    checked={this.state.service_time === "8:00-9:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-15" class="book_radio margin_radio">
-                    8:00-9:00PM
-                  </label>
-                </div>
-                <div class="radio">
-                  <input
-                    id="radio-16"
-                    name="service_time"
-                    type="radio"
-                    value="9:00-10:00PM"
-                    checked={this.state.service_time === "9:00-10:00PM"}
-                    onChange={this.handleInputChange}
-                  />
-                  <label for="radio-16" class="book_radio margin_radio">
-                    9:00-10:00PM
-                  </label>
-                </div>
+                {todaytime >= 12 ? (
+                  <div className="radio">
+                    <input
+                      id="radio-8"
+                      name="trial_date"
+                      type="radio"
+                      value={dayaftertmrfire}
+                      checked={this.state.trial_date === dayaftertmrfire}
+                      onChange={this.handleInputChangeTomo}
+                    />
+                    <label for="radio-8" className="book_radio">
+                      {dayaftertmrwDay}
+                    </label>
+                  </div>
+                ) : null}
               </div>
+            </div>
+          </div>
+          <div className="input">
+            <div className="form-group">
+              <strong className="book_heading">
+              Generally At what time you want to take trial session?
+              </strong>
+
+              <select
+                    className="form-control dropdown "
+                    id="trial_time"
+                    name="trial_time"
+                    onChange={this.handleInputChange}
+                    value={this.state.trial_time}
+                  >
+                    <option value="" selected="selected" disabled="disabled">
+                      -- select one --
+                    </option>
+
+                    <option value="6:00-7:00AM">6:00-7:00AM</option>
+                    <option value="7:00-8:00AM">7:00-8:00AM</option>
+                    <option value="8:00-9:00AM">8:00-9:00AM</option>
+                    <option value="9:00-10:00AM">9:00-10:00AM</option>
+                    <option value="10:00-11:00AM">10:00-11:00AM</option>
+                    <option value="11:00-12:00AM">11:00-12:00AM</option>
+                    <option value="12:00-01:00PM">12:00-01:00PM</option>
+                    <option value="01:00-02:00PM">01:00-02:00PM</option>
+                    <option value="02:00-03:00PM">02:00-03:00PM</option>
+                    <option value="03:00-04:00PM">03:00-04:00PM</option>
+                    <option value="05:00-06:00PM">05:00-06:00PM</option>
+                    <option value="06:00-07:00PM">06:00-07:00PM</option>
+                    <option value="07:00-08:00PM">07:00-08:00PM</option>
+                    <option value="08:00-09:00PM">08:00-09:00PM</option>
+                    <option value="9:00-10:00PM">9:00-10:00PM</option>
+                  </select>
             </div>
           </div>
           <FA
@@ -276,8 +397,10 @@ const mapStateToProps = State => {
 };
 const mapDispatchToProps = dispatch => {
   return {
-    onAddPost: (service_time, typeOfservice) => {
-      dispatch(createPickTrialDate({ service_time, typeOfservice }));
+    onAddPost: (service_time, typeOfservice, trial_date, user_category, trial_time) => {
+      dispatch(userBooking({ service_time, typeOfservice, trial_date, user_category, trial_time}));
+
+
     }
   };
 };

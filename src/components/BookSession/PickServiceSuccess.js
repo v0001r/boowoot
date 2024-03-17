@@ -21,14 +21,15 @@ export class PickServiceSuccess extends Component {
   componentDidUpdate() {
     let user = firebase.auth().currentUser,
       self = this;
-    if (this.props.user.TransactionId) {
-      var ref = firebase
-        .database()
-        .ref("userServices")
-        .child(user.uid)
-        .child(self.props.user.TransactionId);
-      ref.set(self.props.user);
-    }
+      // Add the api here/
+    // if (this.props.user.TransactionId) {
+    //   var ref = firebase
+    //     .database()
+    //     .ref("userServices")
+    //     .child(user.uid)
+    //     .child(self.props.user.TransactionId);
+    //   ref.set(self.props.user);
+    // }
   }
 
   closeModal() {

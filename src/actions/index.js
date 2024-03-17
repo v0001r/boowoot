@@ -35,6 +35,7 @@ import {
   GET_DESCRIPTION,
   TRIAL_DATE,
   USER_CATEGORY,
+  USER_BOOKING,
   PICK_SERVICE_DATE,
   PICK_SERVICE_TIME,
   PICK_TRAINER_PACKAGE,
@@ -96,11 +97,23 @@ export const createPickService = ({
     selectDate
   }
 });
-export const createPickTrialDate = ({ service_time, typeOfservice }) => ({
+export const createPickTrialDate = ({ service_time, typeOfservice, trial_date, user_category}) => ({
   type: TRIAL_DATE,
   payload: {
-    service_time,
-    typeOfservice
+    service_time, 
+    typeOfservice,
+    trial_date,
+    user_category
+  }
+});
+export const userBooking = ({ service_time, typeOfservice, trial_date, user_category, trial_time}) => ({
+  type: USER_BOOKING,
+  payload: {
+    service_time, 
+    typeOfservice,
+    trial_date,
+    user_category,
+    trial_time
   }
 });
 

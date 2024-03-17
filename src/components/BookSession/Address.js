@@ -65,8 +65,6 @@ class Address extends React.Component {
         this.state.address &&
         this.state.landmark &&
         this.state.area &&
-        this.state.name &&
-        this.state.phone &&
         this.state.pincode
       ) {
         var add = this.state;

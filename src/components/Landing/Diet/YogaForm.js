@@ -25,9 +25,8 @@ class YogaForm extends React.Component {
       activity: "",
       diet: "",
       goal: "",
-      period: "",
-      name: "",
-      phone: "",
+      name: localStorage.getItem('name')?localStorage.getItem('name'):"",
+      phone: localStorage.getItem('mobile')?localStorage.getItem('mobile'):"",
       plan: props.User.plan,
       amount: props.User.amount,
 
@@ -49,13 +48,11 @@ class YogaForm extends React.Component {
         this.state.diet &&
         this.state.activity &&
         this.state.medical &&
-        this.state.name &&
-        this.state.phone &&
+
         this.state.age &&
         this.state.height &&
         this.state.weight &&
-        this.state.goal &&
-        this.state.period
+        this.state.goal
       ) {
         var add = this.state;
         this.props.TrainerService(add);
@@ -109,74 +106,70 @@ class YogaForm extends React.Component {
               >
                 <div class="row col-sm-12 col-xs-12 col-md-12 col-lg-12">
                   <div class="col-sm-12 ">
-                    <div class="container-row">
-                      <div class="radio">
-                        <input
-                          id="radio-1"
-                          name="service"
-                          type="radio"
-                          value="myself"
-                          checked={this.state.service === "myself"}
-                          onChange={this.handleInputChange}
-                          validators={["required"]}
-                          errorMessages={["Service cannot be empty"]}
-                          onClick={() => {
-                            this.myself();
-                          }}
-                        />
-                        <label for="radio-1" className="radio-label">
-                          Myself
-                        </label>
+                        <div className="d-flex flex-column workoutpreference">
+                        <ButtonGroup>
+                          <Button
+                            name="service"
+                            value="myself"
+                            checked={this.state.service === "myself"}
+                            onClick={this.handleInputChange}
+                            onChange={() => this.myself()}
+                            className={
+                              this.state.service === "myself" ? "inGym" : null
+                            }
+                            style={{ background: "gray", border: 0 }}
+                          >
+                            My Self
+                          </Button>
+                          <Button
+                            value="forothers"
+                            name="service"
+                            checked={this.state.service === "forothers"}
+                            onClick={this.handleInputChange}
+                            onChange={() => this.handleClickforState()}
+                            className={
+                              this.state.service === "forothers"
+                                ? "inGym"
+                                : null
+                            }
+                            style={{ background: "gray", border: 0 }}
+                          >
+                            For Others
+                          </Button>
+                        </ButtonGroup>
                       </div>
-                      <div className="radio">
-                        <input
-                          id="radio-2"
-                          name="service"
-                          type="radio"
-                          value="forothers"
-                          checked={this.state.service === "forothers"}
-                          onChange={this.handleInputChange}
-                          validators={["required"]}
-                          errorMessages={["Service cannot be empty"]}
-                          onClick={() => {
-                            this.handleClickforState();
-                          }}
-                        />
-                        <label for="radio-2" className="radio-label">
-                          For Others
-                        </label>
-                      </div>
-                    </div>
-                    <div className="container-row">
-                      <div className="radio">
-                        <input
-                          id="radio-3"
-                          name="gender"
-                          type="radio"
-                          value="male"
-                          checked={this.state.gender === "male"}
-                          onChange={this.handleInputChange}
-                          validators={["required"]}
-                        />
-                        <label for="radio-3" className="radio-label">
-                          Male
-                        </label>
-                      </div>
-                      <div className="radio">
-                        <input
-                          id="radio-4"
-                          name="gender"
-                          type="radio"
-                          value="female"
-                          checked={this.state.gender === "female"}
-                          onChange={this.handleInputChange}
-                          validators={["required"]}
-                        />
-                        <label for="radio-4" className="radio-label">
-                          Female
-                        </label>
-                      </div>
-                    </div>
+                      <br />
+                    <div className="d-flex flex-column workoutpreference">
+                    <ButtonGroup>
+                      <Button
+                        name="gender"
+                        value="male"
+                        checked={this.state.gender === "gender"}
+                        onClick={this.handleInputChange}
+                        className={
+                          this.state.gender === "male" ? "inGym" : null
+                        }
+                        style={{ background: "gray", border: 0 }}
+                      >
+                        Male
+                      </Button>
+                      <Button
+                        value="female"
+                        name="gender"
+                        checked={this.state.gender === "female"}
+                        onClick={this.handleInputChange}
+                        className={
+                          this.state.gender === "female"
+                            ? "inGym"
+                            : null
+                        }
+                        style={{ background: "gray", border: 0 }}
+                      >
+                        Female
+                      </Button>
+                    </ButtonGroup>
+                  </div>
+                  <br />
                       <div>
                         <div className="form-group ">
                           <div className="inputfield">
@@ -274,21 +267,7 @@ class YogaForm extends React.Component {
                         />
                       </div>
                     </div>
-                    <div className="form-group ">
-                      <div className="inputfield">
-                        <TextValidator
-                          label="Period *(Cycles)"
-                          validators={["required"]}
-                          errorMessages={"Please enter your Period !"}
-                          type="text"
-                          placeholder="Goal"
-                          className="form-control"
-                          name="period"
-                          onChange={this.handleInputChange}
-                          value={this.state.period}
-                        />
-                      </div>
-                    </div>
+                   
                   </div>
                 </div>
 

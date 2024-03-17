@@ -85,10 +85,10 @@ class Header extends Component {
               className="servie-link"
             >
               <NavDropdown.Item onClick={() => this.navfitnessUser()}>
-                Fitness Trainer@Home
+                Fitness Trainer at Home
               </NavDropdown.Item>
               <NavDropdown.Item onClick={() => this.navYogaUser()}>
-                Yoga Trainer@Home
+                Yoga Trainer at Home
               </NavDropdown.Item>
               <NavDropdown.Item onClick={() => this.navDietUser()}>
                 Diet Plans

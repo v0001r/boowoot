@@ -32,6 +32,7 @@ import "../src/components/Header/header.css";
 import Transactions from "./components/Dashboard/Transactions";
 import Diet from "./components/Landing/Diet";
 import SelectService from "./components/Landing/SelectService";
+import Success from "./components/TrainerRegistrations/Success";
 
 const history = createBrowserHistory();
 
@@ -97,6 +98,7 @@ class App extends Component {
             <Route exact path="/admin" component={AdminNavigation} />
             <Route exact path="/fitnessplan" component={FitnessDietPlan} />
             <Route exact path="/SelectService" component={SelectService} />
+            <Route exact path="/trainersuccess" component={Success} />
           </Switch>
         </Router>
       </div>

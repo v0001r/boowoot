@@ -115,59 +115,52 @@ class BookSession extends React.Component {
                       return <PickServiceTime nextStep={this.nextStep} />;
                     case 2:
                       return (
-                        <UserCategory
-                          nextStep={this.nextStep}
-                          prevStep={this.prevStep}
-                        />
+                        <PickServicePackage
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                      />
                       );
                     case 3:
                       return (
-                        <PickServiceDate
-                          nextStep={this.nextStep}
-                          prevStep={this.prevStep}
-                          callParent={data => this.callParent(data)}
-                          callParentTomo={tomo_data =>
-                            this.callParentTomo(tomo_data)
-                          }
-                        />
+                        <Address
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                      />
                       );
                     case 4:
-                      return (
-                        <PickTrialTime
-                          nextStep={this.nextStep}
-                          prevStep={this.prevStep}
-                          // timestochild={this.state.times}
-                          // tomotimestochild={this.state.tomotimes}
-                          time={this.state.times}
-                        />
-                      );
-                    case 5:
-                      return (
-                        <PickServicePackage
-                          nextStep={this.nextStep}
-                          prevStep={this.prevStep}
-                        />
-                      );
-                    case 6:
-                      return (
-                        <Address
-                          nextStep={this.nextStep}
-                          prevStep={this.prevStep}
-                        />
-                      );
-                    case 7:
                       return (
                         <PickServiceDeatails
                           nextStep={this.nextStep}
                           prevStep={this.prevStep}
                         />
                       );
+                    case 5:
+                      return (
+                        <PickServiceSuccess
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                      />
+                      );
+                    case 6:
+                      return (
+                        <PickServiceSuccess
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                      />
+                      );
+                    case 7:
+                      return (
+                        <PickServiceSuccess
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                      />
+                      );
                     case 8 || 9:
                       return (
                         <PickServiceSuccess
-                          nextStep={this.nextStep}
-                          prevStep={this.prevStep}
-                        />
+                        nextStep={this.nextStep}
+                        prevStep={this.prevStep}
+                      />
                       );
                   }
                 })()}

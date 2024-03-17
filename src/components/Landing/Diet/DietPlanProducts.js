@@ -12,6 +12,8 @@ import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { firebase } from "../../firebase";
 import DietProducts from "./DietProducts";
+import { ToastContainer, toast, Flip } from "react-toastify";
+import { toastConfig } from "../../Custom/ToastConfig";
 import {
   Card,
   Modal,
@@ -92,22 +94,38 @@ class Productinfo extends React.Component {
       loading: true
     });
     let yoga = {};
+    let self = this;
 
     yoga = Object.assign(this.props.User);
-
-    var user = firebase.auth().currentUser;
-
-    var ref = firebase
-      .database()
-      .ref("users")
-      .child(user.uid)
-      .child("dietPlan")
-      .child(this.props.User.TransactionID);
-    ref.set(yoga).then(() => {
-      this.setState({
-        loading: false,
-        acknowledgementform: true
-      });
+   
+    return new Promise(function(resolve, reject) {
+      fetch('http://localhost:5011/v1/diet-plans', {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+        credentials: "same-origin", // include, *same-origin, omit
+        headers: {
+          
+          "Content-Type": 'application/json',
+          "Access-Control-Allow-Origin": "*",
+          "Accept-Encoding": "gzip"
+        },
+        body: JSON.stringify(yoga) // body data type must match "Content-Type" header
+      }).then((response) => { 
+        console.log(response)
+        if(response.ok){
+         self.success();
+        }
+      })
+      .catch(err => {
+          toast(err.message, toastConfig);
+          reject(err);
+        }); // parses response to JSON
+    });
+  }
+  success(){
+    this.setState({
+      loading: false,
+      acknowledgementform: true
     });
   }
 

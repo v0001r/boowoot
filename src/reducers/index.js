@@ -45,7 +45,8 @@ import {
   RESET_DIET_PLAN,
   OPEN_DIET,
   RESET_DIET_TYPE,
-  SHOW_MODAL
+  SHOW_MODAL,
+  USER_BOOKING
 } from "../actions/types";
 import { combineReducers } from "redux";
 
@@ -184,7 +185,7 @@ function registerUserReducer(state = initialState.reguser, action) {
     case ADD_REGISTERUSER:
       return Object.assign({}, state.userDetail, action.payload);
     case TRIAL_DATE:
-      return Object.assign({}, state.trialdate, action.payload);
+      return Object.assign({}, state, action.payload);
     case USER_CATEGORY:
       var newState = Object.assign({}, state);
       return Object.assign({}, newState, state.reguser, action.payload);
@@ -207,6 +208,9 @@ function registerUserReducer(state = initialState.reguser, action) {
       return Object.assign({}, state, { TransactionId: action.payload });
     case GET_AMOUNT_BOOK_SESSION:
       return { ...state, bookamount: action.payload };
+    case USER_BOOKING:
+      console.log(action.payload)
+      return Object.assign({}, state.bookSession, action.payload);
     case RESET_BOOK_SESSION:
       return Object.assign({}, state.bookSession, null);
     default:
